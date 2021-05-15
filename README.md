@@ -1,3 +1,7 @@
+## Changed the collapsible in resume.html to show always
+## Run with resume-cli@3.0.0 as 3.0.4 was having issue reading the local template : https://github.com/jsonresume/resume-cli/pull/537
+
+
 # Stack Overflow theme for jsonresume [![npm version](https://badge.fury.io/js/jsonresume-theme-stackoverflow.svg)](http://badge.fury.io/js/jsonresume-theme-stackoverflow)
 
 <span style="color:red">**I offer tailored career coaching on MentorCruise. You can also book one-off resume feedback or a mock interview.**</span>
