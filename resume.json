@@ -1,0 +1,169 @@
+{
+    "meta": {
+        "theme": "stackoverflow"
+    },
+    "basics": {
+        "name": "Aseem Shrey",
+        "label": "Security Engineer",
+        "image": "https://avatars2.githubusercontent.com/u/17861054?s=460&u=3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&v=4",
+        "summary": "Hi ! I am Aseem. I completed my higher education from DPS RKP and then graduated in CS from IIIT Allahabad. While in college, I've been the coordinator for cybersecurity wing and our college CTF team participated and won many of the national and international CTFs. Apart from CTFs, I also reported some critical bugs to governments and organisations one of which has been covered in Economic Times in September this year. Recently I've started teaching about cybersecurity on my youtube channel HackingSimplified. I love to run ( hope to run a marathon some day ) and read books.",
+        "website": "https://aseemshrey.in",
+        "email": "aseemshrey@gmail.com",
+        "location": {
+            "city": "Patna, Bihar",
+            "countryCode": "IN"
+        },
+        "profiles": [
+            {
+                "username": "aseemshrey",
+                "url": "https://twitter.com/AseemShrey",
+                "network": "twitter"
+            },
+            {
+                "url": "https://github.com/LuD1161",
+                "username": "LuD1161",
+                "network": "github"
+            },
+            {
+                "url": "https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng",
+                "username": "HackingSimplified",
+                "network": "youtube"
+            },
+            {
+                "url": "https://www.linkedin.com/in/aseemshrey/",
+                "username": "Aseem Shrey",
+                "network": "linkedin"
+            }
+        ]
+    },
+    "education": [
+        {
+            "endDate": "2019-05-17",
+            "startDate": "2015-07-25",
+            "area": "Information Technology",
+            "studyType": "B Tech.",
+            "institution": "IIIT Allahabad",
+            "gpa": "7.7",
+            "summary": ""
+        },
+        {
+            "endDate": "2014",
+            "startDate": "2012",
+            "area": "Higher Secondary",
+            "studyType": "",
+            "institution": "DPS R K Puram, New Delhi",
+            "gpa": "89%",
+            "summary": ""
+        },
+        {
+            "endDate": "2012",
+            "startDate": "2005",
+            "area": "Secondary",
+            "studyType": "",
+            "institution": "VVRS, Purnea, Bihar",
+            "gpa": "10",
+            "summary": ""
+        }
+    ],
+    "skills": [
+        {
+            "keywords": [
+                "OWASP Top 10",
+                "recon automation"
+            ],
+            "level": "Master",
+            "name": "WebApp Security"
+        },
+        {
+            "keywords": [
+                "AWS",
+                "GCP",
+                "vault",
+                "sonarqube",
+                "terraform"
+            ],
+            "level": "Intermediate",
+            "name": "Infra Security"
+        }
+    ],
+    "awards": [
+        {
+            "title": "HackIM CTF - 1st ( India ), 8th ( World Rank ) - 2018",
+            "awarder": "NullCon - Walmart & VirtualBox"
+        },
+        {
+            "title": "Found IDOR Bug in Digilocker ( GoI Initiative ) - Hall of Fame - 2017",
+            "awarder": "Govt of India"
+        },
+        {
+            "title": "Reported bugs to Google, Myntra, MakeMyTrip, Zoho, IBM, Sony, GM etc"
+        },
+        {
+            "title": "1st in Terminal Tragedy CTF, NIT Trichy - 2017",
+            "awarder": "NIT Trichy"
+        },
+        {
+            "title": "DRDO CTF - Top 20 - 2017",
+            "awarder": "DRDO"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Hindi",
+            "fluency": "Native Speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Fluent"
+        }
+    ],
+    "work": [
+        {
+            "summary": "Working in the ProdSec team. Driving Shift Left culture at GoJek.",
+            "website": "https://gojek.com/",
+            "name": "GoJek",
+            "location": "Bangalore, India",
+            "position": "Senior Information Security Engineer",
+            "startDate": "2020-02-01",
+            "highlights": [
+                "<strong>CIS Benchmark Auto Remediation</strong> in Google Cloud using Cloud Functions"
+            ]
+        },
+        {
+            "highlights": [
+                "<strong>DNS-As-Code</strong> : Created from scratch an automated pipeline using terraform to create DNS entries in cloudflare as well as Route53 with failover option for easy switching to either of the DNS providers\n<strong>Built Using</strong> : terraform",
+                "<strong>G-Shield Security Bot</strong> : Created from scratch a github bot with the intention of shift-left, bringing security closer to the developer workflow. It scans each PR for common security issues like hardcoded secrets, code smells, vulnerable docker images, sensitive mount point etc. The code is modular and thus new modules have been easily added to it by other team members.\n<strong>Built Using</strong> : python, celery and github APIs",
+                "<strong>Temporary credentials for DB</strong> : Integrated vault with DBs and github so that users can generate temp credentials for database based on their github team",
+                "<strong>Cognito Integration</strong> : Worked with multiple teams to integrate AWS cognito in legacy APIs to provide better authentication workflows like social oauth ( such as google auth ) and OTP based workflow",
+                "<strong>OauthProxy</strong> : Integrated oauthproxy for gsuite authentication and compliance to some of our internal applications"
+            ],
+            "summary": "Just after college have joined this as the 2nd member of the security team, just after it's creation a month earlier. The team and manager are awesome here. I've been working on a lot of interesting projects here. Some of the highlights are :",
+            "website": "http://www.grofers.com",
+            "name": "Grofers",
+            "location":"Gurgaon, India",
+            "position": "Security Engineer",
+            "endDate": "2021-01-27",
+            "startDate": "2019-04-01"
+        }
+    ],
+    "interests": [
+        {
+            "name": "CyberSecurity 🖥️",
+            "keywords":["web app pentesting", "reverse engineering"]
+        },
+        {
+            "name": "Reading Books 📚",
+            "keywords":["goodreads-97128738-aseem"]
+        },
+        {
+            "name": "Creating Stuff 💡"
+        },
+        {
+            "name": "Running 🏃",
+            "keywords":["garmin forerunner45", "strava-47262934"]
+        },
+        {
+            "name": "Swimming 🏊"
+        }
+    ]
+}
