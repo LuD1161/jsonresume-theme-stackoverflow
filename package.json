@@ -11,6 +11,7 @@
   "main": "index.js",
   "dependencies": {
     "handlebars": "^4.3.0",
-    "moment": "^2.19.3"
+    "moment": "^2.19.3",
+    "resume-cli": "^3.0.7"
   }
 }

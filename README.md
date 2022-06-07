@@ -1,6 +1,12 @@
 ## Changed the collapsible in resume.html to show always
-## Run with resume-cli@3.0.0 as 3.0.4 was having issue reading the local template : https://github.com/jsonresume/resume-cli/pull/537
 
+### Run with resume-cli@3.0.7 as 3.0.4 was having issue reading the local template : https://github.com/jsonresume/resume-cli/pull/537
+
+## Run with Gitpod ( default method )
+
+Click this button to run your project on [Gitpod](https://gitpod.io/) which comes pre-configured with the `js` environment you need 🔥
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/LuD1161/jsonresume-theme-stackoverflow.git)
 
 # Stack Overflow theme for jsonresume [![npm version](https://badge.fury.io/js/jsonresume-theme-stackoverflow.svg)](http://badge.fury.io/js/jsonresume-theme-stackoverflow)
 
