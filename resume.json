@@ -6,14 +6,16 @@
         "name": "Aseem Shrey",
         "label": "Security Engineer",
         "image": "https://avatars2.githubusercontent.com/u/17861054?s=460&u=3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&v=4",
-        "summary": "Hi 👋<br>Myself, Aseem. I work as a <u>Senior Security Engineer at GoJek</u>.<br>My usual work week involves :<br><ul> <li><a href=\"https://www.gojek.io/blog/compliance-as-code\">Compliance as Code</a> : This is a framework I wrote from scratch using Golang, to run automated CIS checks on our <strong>GCP infra</strong>, which spans 250+ projects. Also auto remediating any non-compliant resources. It has been running in production since the past 5 months without any downtime. Runs on <u>Google Cloud Run</u>.</li> <li><strong>Android and Web App Pentesting</strong> : Pentesting any feature release in the GoJek web API backend and GoJek Android application.</li> <li><strong>Red Teaming</strong> : Finding critcal vulnerabilities and escalated privileges to cover any loopholes in the whole GoJek ecosystem.</li> <li><strong>Code and Design Reviews</strong> : Code and design reviews for any feature release in the GoJek API or mobile application.</li> </ul> <br>In my free time, I teach about cybersecurity on my youtube channel <a href=\"https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng\">HackingSimplified</a>, develop security projects in python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.</p>",
-        "website": "https://aseemshrey.in",
-        "email": "aseemshrey@gmail.com",
+        "summary": "Some of my recent work :<br><ul><li><a href=\"https://github.com/LuD1161/upi-recon-cli\">UPI Recon CLI</a> : A Golang CLI tool for reconnaissance using virtual payment address (VPA). </li><li><strong>Bad USB scripts</strong> : <a href=\"https://github.com/LuD1161/Bad-USB\">Bad USB scripts</a>, a repo of ino scripts, to program an attiny85 to work as a bad usb keyboard, running malicious shell scripts on the target OS.</li><li><strong>IRCTC passenger data leak</strong> : Indian railways passenger data leak, covered in <a href=\"https://economictimes.indiatimes.com/industry/transportation/railways/irctc-pulls-up-bajaj-allianz-and-liberty-general-insurance-for-data-privacy-issues/articleshow/91748473.cms\">EconomicTimes</a>, a leading Indian daily.</li></ul><br>In my free time, I teach about cybersecurity on my youtube channel <a href=\"https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng\">HackingSimplified</a>, develop security projects in golang & python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.<br>Sometimes play CTFs ( though haven't played one, in some time now ), I love the deep work that it requires in solving each challenge.<br><br>Some notable writeups : <ul><li><a href=\"https://aseemshrey.in/google-cat-chat/\">Cat Chat Google-CTF '18 Writeup</a> : Using CSS to exfiltrate data. This required quite a complex attack chain.</li><li><a href='https://aseemshrey.in/hacker-movie-club/'>Hacker Movie Club CSAW Quals 2018 : </a>Required us to exploit web cache deception to get the solution.</li></ul></p>",
         "location": {
-            "city": "Patna, Bihar",
-            "countryCode": "IN"
+            "countryCode": "🇮🇳 India"
         },
         "profiles": [
+            {
+                "username": "🌏 aseemshrey.in",
+                "url": "https://aseemshrey.in",
+                "network": " "
+            },
             {
                 "username": "aseemshrey",
                 "url": "https://twitter.com/AseemShrey",
@@ -54,15 +56,6 @@
             "institution": "DPS R K Puram, New Delhi",
             "gpa": "89%",
             "summary": ""
-        },
-        {
-            "endDate": "2012",
-            "startDate": "2005",
-            "area": "Secondary",
-            "studyType": "",
-            "institution": "VVRS, Purnea, Bihar",
-            "gpa": "10",
-            "summary": ""
         }
     ],
     "skills": [
@@ -96,21 +89,12 @@
         },
         {
             "keywords": [
-                "Guard Duty",
-                "Macie",
-                "Trusted Advisor",
-                "Cognito"
+                "AWS",
+                "GCP",
+                "Kubernetes"
             ],
             "level": "Advanced",
-            "name": "AWS Security"
-        },
-        {
-            "level": "Intermediate",
-            "name": "GCP Security"
-        },
-        {
-            "level": "Intermediate",
-            "name": "Kubernetes Security"
+            "name": "Cloud & k8s Security"
         }
     ],
     "awards": [
@@ -136,29 +120,37 @@
     ],
     "work": [
         {
+            "summary": "Working in the SecInfra team. Automating security through code.",
+            "website": "https://www.rippling.com/",
+            "name": "Rippling",
+            "location": "Bangalore, India",
+            "position": "Security Engineer",
+            "startDate": "2022-02-28",
+            "highlights": [
+                "Building automation around Vulnerability Management System ( VMS )."
+            ]
+        },
+        {
             "summary": "Working in the ProdSec team. Driving Shift Left culture at GoJek.",
             "website": "https://gojek.com/",
             "name": "GoJek",
             "location": "Bangalore, India",
             "position": "Senior Information Security Engineer",
             "startDate": "2021-02-01",
+            "endDate": "2022-02-19",
             "highlights": [
                 "<strong><a href=\"https://www.gojek.io/blog/compliance-as-code\">Compliance As Code</a> :</strong> CIS Benchmark auto remediation in Google Cloud using Google Cloud Run.",
-                "<strong>Web App & Android Pentesting :</strong> Pentesting for any feature release in the GoJek web API backend and GoJek Android application.",
-                "<strong>Red Teaming :</strong> Found critcal vulnerabilities and escalated privileges to gain admin access to almost all of the GoJek Infrastructure.",
-                "<strong>Code Reviews :</strong> Code reviews for any feature release in the GoJek API or mobile application.",
-                "<strong>GoSecCon :</strong> Organised the first ever security conference of GoJek, which included a CTF competition + external and internal speaker talks over a span of 2 days."
+                "<strong>Web & Android Pentesting :</strong> Pentesting for any feature release in the GoJek web API backend and Android application.",
+                "<strong>Red Teaming :</strong> Found critical vulns and escalated privileges to gain admin access to all of the Infrastructure.",
+                "<strong>GoSecCon :</strong> Organised 1st security conference of GoJek. It included a CTF competition + external and internal speaker talks over a span of 2 days."
             ]
         },
         {
             "highlights": [
-                "<strong>DNS-As-Code</strong> : Created from scratch an automated pipeline using terraform to create DNS entries in cloudflare as well as Route53 with failover option for easy switching to either of the DNS providers\n<strong>Built Using</strong> : terraform",
-                "<strong>G-Shield Security Bot</strong> : Created from scratch a github bot with the intention of shift-left, bringing security closer to the developer workflow. It scans each PR for common security issues like hardcoded secrets, code smells, vulnerable docker images, sensitive mount point etc. The code is modular and thus new modules have been easily added to it by other team members.\n<strong>Built Using</strong> : python, celery and github APIs",
-                "<strong>Temporary credentials for DB</strong> : Integrated vault with DBs and github so that users can generate temp credentials for database based on their github team",
-                "<strong>Cognito Integration</strong> : Worked with multiple teams to integrate AWS cognito in legacy APIs to provide better authentication workflows like social oauth ( such as google auth ) and OTP based workflow",
-                "<strong>OauthProxy</strong> : Integrated oauthproxy for gsuite authentication and compliance to some of our internal applications"
+                "<strong>DNS-As-Code</strong> : Created an automated pipeline using terraform to create DNS entries in cloudflare as well as Route53 with failover option for easy switching. <strong>Built Using</strong> : terraform",
+                "<strong>G-Shield Security Bot</strong> : Created a github bot, which scans each PR for common security issues like hardcoded secrets, code smells etc.<strong>Built Using</strong> : python, celery and github APIs"
             ],
-            "summary": "Just after college have joined this as the 2nd member of the security team, just after it's creation a month earlier. The team and manager are awesome here. I've been working on a lot of interesting projects here. Some of the highlights are :",
+            "summary": "Just after college have joined this as the 2nd member of the security team.",
             "website": "http://www.grofers.com",
             "name": "Grofers",
             "location": "Gurgaon, India",
@@ -167,42 +159,14 @@
             "startDate": "2019-04-01"
         }
     ],
-    "languages": [
+    "references": [
         {
-            "language": "Hindi",
-            "fluency": "Native Speaker"
+            "name": "Dharmesh Mehta, Head of Product Security @GoJek",
+            "reference": "Reference…"
         },
         {
-            "language": "English",
-            "fluency": "Fluent"
-        }
-    ],
-    "interests": [
-        {
-            "name": "CyberSecurity 🖥️",
-            "keywords": [
-                "web app pentesting",
-                "reverse engineering"
-            ]
-        },
-        {
-            "name": "Reading Books 📚",
-            "keywords": [
-                "goodreads-97128738-aseem"
-            ]
-        },
-        {
-            "name": "Creating Stuff 💡"
-        },
-        {
-            "name": "Running 🏃",
-            "keywords": [
-                "garmin forerunner45",
-                "strava-47262934"
-            ]
-        },
-        {
-            "name": "Swimming 🏊"
+            "name": "Avinash Jain, Security at Microsoft (Identity Platform)",
+            "reference": "Reference…"
         }
     ]
 }
