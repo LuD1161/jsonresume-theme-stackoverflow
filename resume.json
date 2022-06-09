@@ -6,10 +6,7 @@
         "name": "Aseem Shrey",
         "label": "Security Engineer",
         "image": "https://avatars2.githubusercontent.com/u/17861054?s=460&u=3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&v=4",
-        "summary": "Some of my recent work :<br><ul><li><a href=\"https://github.com/LuD1161/upi-recon-cli\">UPI Recon CLI</a> : A Golang CLI tool for reconnaissance using virtual payment address (VPA). </li><li><strong>Bad USB scripts</strong> : <a href=\"https://github.com/LuD1161/Bad-USB\">Bad USB scripts</a>, a repo of ino scripts, to program an attiny85 to work as a bad usb keyboard, running malicious shell scripts on the target OS.</li><li><strong>IRCTC passenger data leak</strong> : Indian railways passenger data leak, covered in <a href=\"https://economictimes.indiatimes.com/industry/transportation/railways/irctc-pulls-up-bajaj-allianz-and-liberty-general-insurance-for-data-privacy-issues/articleshow/91748473.cms\">EconomicTimes</a>, a leading Indian daily.</li></ul><br>In my free time, I teach about cybersecurity on my youtube channel <a href=\"https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng\">HackingSimplified</a>, develop security projects in golang & python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.<br>Sometimes play CTFs ( though haven't played one, in some time now ), I love the deep work that it requires in solving each challenge.<br><br>Some notable writeups : <ul><li><a href=\"https://aseemshrey.in/google-cat-chat/\">Cat Chat Google-CTF '18 Writeup</a> : Using CSS to exfiltrate data. This required quite a complex attack chain.</li><li><a href='https://aseemshrey.in/hacker-movie-club/'>Hacker Movie Club CSAW Quals 2018 : </a>Required us to exploit web cache deception to get the solution.</li></ul></p>",
-        "location": {
-            "countryCode": "🇮🇳 India"
-        },
+        "summary": "Some of my work :<br><ul><li><a href=\"https://github.com/LuD1161/upi-recon-cli\">UPI Recon CLI</a> : A Golang CLI tool for reconnaissance using virtual payment address (VPA). </li><li><a href=\"https://github.com/LuD1161/MyPythonAdministrationTool\">Python RAT</a> : A python RAT, hosted anonymously on free webhosting services like 000webhost etc. </li><li><strong>Bad USB scripts</strong> : <a href=\"https://github.com/LuD1161/Bad-USB\">Bad USB scripts</a>, a repo of ino scripts, to program an attiny85 to work as a bad usb keyboard, running malicious shell scripts on the target OS.</li><li><strong>IRCTC passenger data leak</strong> : Indian railways passenger data leak, covered in <a href=\"https://economictimes.indiatimes.com/industry/transportation/railways/irctc-pulls-up-bajaj-allianz-and-liberty-general-insurance-for-data-privacy-issues/articleshow/91748473.cms\">EconomicTimes</a>, a leading Indian daily.</li><li><strong>COVID-19 patient data leak</strong> covered in <a href=\"https://economictimes.indiatimes.com/tech/internet/security-researchers-find-covid-19-patient-data-online-alert-government-to-plug-leaks/articleshow/78037261.cms\">EconomicTimes</a>, a leading Indian daily.</li></ul><br>Some notable writeups/video : <ul><li><a href='https://aseemshrey.in/amina-vbs-the-shortcut-virus-and-the-malware-within/'>AMINA VBS - The shortcut virus : </a>My start into malware research, while in college, helping a friend, I copied this virus to my kali linux.</li><li><a href=\"https://www.youtube.com/watch?v=NtNkv5GFzEU\">The Pegasus Project | NSO Group | Spyware #Explained </a> : A video explaining the Pegasus project.</li><li><a href=\"https://aseemshrey.in/google-cat-chat/\">Cat Chat Google-CTF '18 Writeup</a> : Using CSS to exfiltrate data. This required quite a complex attack chain.</li><li><a href='https://aseemshrey.in/hacker-movie-club/'>Hacker Movie Club CSAW Quals 2018 : </a>Required us to exploit web cache deception to get the solution.</li></li></ul><br>In my free time, I teach about cybersecurity on my youtube channel <a href=\"https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng\">HackingSimplified</a>, develop security projects in golang & python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.<br>Sometimes play CTFs ( though haven't played one, in some time now ), I love the deep work that it requires in solving each challenge.</p>",
         "profiles": [
             {
                 "username": "🌏 aseemshrey.in",
@@ -62,17 +59,11 @@
         {
             "keywords": [
                 "OWASP Top 10",
-                "Recon automation"
-            ],
-            "level": "Master",
-            "name": "Web App Pentesting"
-        },
-        {
-            "keywords": [
+                "Recon automation",
                 "Android"
             ],
-            "level": "Advanced",
-            "name": "Mobile App Pentesting"
+            "level": "Master",
+            "name": "App Pentesting"
         },
         {
             "keywords": [
@@ -86,6 +77,16 @@
         {
             "level": "Intermediate",
             "name": "Golang"
+        },
+        {
+            "keywords": [
+                "ctfs",
+                "malware",
+                "IDA",
+                "r2"
+            ],
+            "level": "Intermediate",
+            "name": "Researching"
         },
         {
             "keywords": [
@@ -148,7 +149,7 @@
         {
             "highlights": [
                 "<strong>DNS-As-Code</strong> : Created an automated pipeline using terraform to create DNS entries in cloudflare as well as Route53 with failover option for easy switching. <strong>Built Using</strong> : terraform",
-                "<strong>G-Shield Security Bot</strong> : Created a github bot, which scans each PR for common security issues like hardcoded secrets, code smells etc.<strong>Built Using</strong> : python, celery and github APIs"
+                "<strong>G-Shield Security Bot</strong> : Created a github bot, which scans each PR for common security issues like hardcoded secrets, code smells etc. <strong>Built Using</strong> : python, celery and github APIs"
             ],
             "summary": "Just after college have joined this as the 2nd member of the security team.",
             "website": "http://www.grofers.com",
@@ -166,7 +167,7 @@
         },
         {
             "name": "Avinash Jain, Security at Microsoft (Identity Platform)",
-            "reference": "Reference…"
+            "reference": "I worked with Aseem in the Security Team as his manager and what I really liked about him is his all-around skill. He never backs down from any challenge or new learning thrown at him and made sure he stepped out of the comfort zone to achieve the feat. He has got experience working as Developer and Secops  - Jack of all trades. He also impressed everyone with his sheer dedication to work. Apart from professional development, he has done some fantastic work in his personal skill development. One thing really impressed me how he was able to adapt himself to the new work environment and quickly start initiating projects. His  knowledge in network and application level security is quite impressive. He is definitely a quick learner and with the skillset that he poses, he is really a good security engineer."
         }
     ]
 }
