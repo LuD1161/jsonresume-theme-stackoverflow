@@ -4,16 +4,15 @@
     },
     "basics": {
         "name": "Aseem Shrey",
-        "label": "Security Engineer",
+        "label": "Security Engineer 🇮🇳",
         "image": "https://avatars2.githubusercontent.com/u/17861054?s=460&u=3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&v=4",
-        "summary": "Hi 👋<br>Myself, Aseem. I work as a <u>Senior Security Engineer at GoJek</u>.<br>My usual work week involves :<br><ul> <li><a href=\"https://www.gojek.io/blog/compliance-as-code\">Compliance as Code</a> : This is a framework I wrote from scratch using Golang, to run automated CIS checks on our <strong>GCP infra</strong>, which spans 250+ projects. Also auto remediating any non-compliant resources. It has been running in production since the past 5 months without any downtime. Runs on <u>Google Cloud Run</u>.</li> <li><strong>Android and Web App Pentesting</strong> : Pentesting any feature release in the GoJek web API backend and GoJek Android application.</li> <li><strong>Red Teaming</strong> : Finding critcal vulnerabilities and escalated privileges to cover any loopholes in the whole GoJek ecosystem.</li> <li><strong>Code and Design Reviews</strong> : Code and design reviews for any feature release in the GoJek API or mobile application.</li> </ul> <br>In my free time, I teach about cybersecurity on my youtube channel <a href=\"https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng\">HackingSimplified</a>, develop security projects in python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.</p>",
-        "website": "https://aseemshrey.in",
-        "email": "aseemshrey@gmail.com",
-        "location": {
-            "city": "Patna, Bihar",
-            "countryCode": "IN"
-        },
+        "summary": "Hi 👋<br>Myself, Aseem. I work as a <u>Security Engineer</u> at <a href='https://www.rippling.com/'>Rippling</a>.<br><br>My usual work week involves :<br><ul> <li>Automating SecOps : Building automation using Golang or Python to effectively manage infrastructure security at scale.</li> <li><strong>Code Review</strong> : Some PR changes going to production.</li></ul><br> In the past, at Gojek I worked in ProdSec team, working on : <ul><li><strong><a href='https://www.gojek.io/blog/compliance-as-code'>Compliance as Code</a> </strong>: This is a framework I wrote from scratch using Golang, to run automated CIS checks on our GCP infra, which spans 250+ projects. Also auto remediating any non-compliant resources. It has been running in production since the past 5 months without any downtime. Runs on <u>Google Cloud Run</u>.</li><li><strong>Android and Web App Pentesting</strong> : Pentesting any feature release in the GoJek web API backend and GoJek Android application.</li> <li><strong>Code and Design Reviews</strong> : Code and design reviews for any feature release in the GoJek API or mobile application.</li> <li><strong>Red Teaming</strong> : Finding critcal vulnerabilities and escalated privileges to cover any loopholes in the whole GoJek ecosystem.</li>  </ul> <br>In my free time, I teach about cybersecurity on my youtube channel <a href=\"https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng\">HackingSimplified</a>, develop security projects in python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.</p>",
         "profiles": [
+            {
+                "username": "🌏 aseemshrey.in",
+                "url": "https://aseemshrey.in",
+                "network": " "
+            },
             {
                 "username": "aseemshrey",
                 "url": "https://twitter.com/AseemShrey",
@@ -68,18 +67,25 @@
     "skills": [
         {
             "keywords": [
-                "OWASP Top 10",
-                "Recon automation"
+                "AWS",
+                "GCP",
+                "Kubernetes",
+                "Guard Duty",
+                "Macie",
+                "Trusted Advisor",
+                "Cognito"
             ],
-            "level": "Master",
-            "name": "Web App Pentesting"
+            "level": "Advanced",
+            "name": "Cloud & k8s Security"
         },
         {
             "keywords": [
+                "OWASP Top 10",
+                "Recon automation",
                 "Android"
             ],
-            "level": "Advanced",
-            "name": "Mobile App Pentesting"
+            "level": "Master",
+            "name": "App Pentesting"
         },
         {
             "keywords": [
@@ -96,21 +102,13 @@
         },
         {
             "keywords": [
-                "Guard Duty",
-                "Macie",
-                "Trusted Advisor",
-                "Cognito"
+                "ctfs",
+                "malware",
+                "IDA",
+                "r2"
             ],
-            "level": "Advanced",
-            "name": "AWS Security"
-        },
-        {
             "level": "Intermediate",
-            "name": "GCP Security"
-        },
-        {
-            "level": "Intermediate",
-            "name": "Kubernetes Security"
+            "name": "Researching"
         }
     ],
     "awards": [
@@ -136,12 +134,24 @@
     ],
     "work": [
         {
+            "summary": "Working in the SecInfra team. Automating security through code.",
+            "website": "https://www.rippling.com/",
+            "name": "Rippling",
+            "location": "Bangalore, India",
+            "position": "Security Engineer",
+            "startDate": "2022-02-28",
+            "highlights": [
+                "Building automation around Vulnerability Management System ( VMS )."
+            ]
+        },
+        {
             "summary": "Working in the ProdSec team. Driving Shift Left culture at GoJek.",
             "website": "https://gojek.com/",
             "name": "GoJek",
             "location": "Bangalore, India",
             "position": "Senior Information Security Engineer",
             "startDate": "2021-02-01",
+            "endDate": "2022-02-19",
             "highlights": [
                 "<strong><a href=\"https://www.gojek.io/blog/compliance-as-code\">Compliance As Code</a> :</strong> CIS Benchmark auto remediation in Google Cloud using Google Cloud Run.",
                 "<strong>Web App & Android Pentesting :</strong> Pentesting for any feature release in the GoJek web API backend and GoJek Android application.",
@@ -165,6 +175,12 @@
             "position": "Security Engineer",
             "endDate": "2021-01-27",
             "startDate": "2019-04-01"
+        }
+    ],
+    "references": [
+        {
+            "name": "Avinash Jain, Security at Microsoft (Identity Platform)",
+            "reference": "I worked with Aseem in the Security Team as his manager and what I really liked about him is his all-around skill. He never backs down from any challenge or new learning thrown at him and made sure he stepped out of the comfort zone to achieve the feat. He has got experience working as Developer and Secops  - Jack of all trades. He also impressed everyone with his sheer dedication to work. Apart from professional development, he has done some fantastic work in his personal skill development. One thing really impressed me how he was able to adapt himself to the new work environment and quickly start initiating projects. His  knowledge in network and application level security is quite impressive. He is definitely a quick learner and with the skillset that he poses, he is really a good security engineer."
         }
     ],
     "languages": [
