@@ -654,13 +654,13 @@ section .location {
 
 @media print {
   #profiles a:not(.hide-href-print)::after{
-    content: " (" attr(href) ") ";
+    content: "";
   }
   #profiles .url .show-only-url-print {
-    display: none;
+    display: inline;
   }
   #profiles .url a::after {
-    content: attr(href);
+    content: "";
   }
   #resume {
     margin: 0.1em;
@@ -842,7 +842,7 @@ section .location {
       				<div class="username">
       					<span class="fa-brands fa-youtube youtube social"></span>
       					<span class="url">
-      						<a target="_blank" href="https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng"><span class="show-only-url-print">HackingSimplified</span></a>
+      						<a target="_blank" href="https://www.youtube.com/@hackingsimplifiedas"><span class="show-only-url-print">HackingSimplifiedAS</span></a>
       					</span>
       				</div>
       			</div>

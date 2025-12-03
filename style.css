@@ -646,13 +646,13 @@ section .location {
 
 @media print {
   #profiles a:not(.hide-href-print)::after{
-    content: " (" attr(href) ") ";
+    content: "";
   }
   #profiles .url .show-only-url-print {
-    display: none;
+    display: inline;
   }
   #profiles .url a::after {
-    content: attr(href);
+    content: "";
   }
   #resume {
     margin: 0.1em;
