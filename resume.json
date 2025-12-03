@@ -4,14 +4,14 @@
     },
     "basics": {
         "name": "Aseem Shrey",
-        "label": "Founder SecureMyOrg | Security Engineer | Builder 🛠️",
+        "label": "Building ShipSec AI - Your AI Security Copilot | Prev - Security Engg @ Rippling, Yahoo, Blinkit & Gojek | Privacy Engg @ CMU",
         "image": "https://avatars2.githubusercontent.com/u/17861054?s=460&u=3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&v=4",
-        "summary": "Hi 👋<br>Myself, Aseem. I am the founder of <a href=\"https://securemyorg.com\">SecureMyOrg</a>, where we offer VAPT, Cloud security audit and remote security engineers as a service. In my free time, I explore the cybersecurity space for interesting problems to solve. I've worked as a freelance cybersecurity consultant, contracting my services at a few organisations in US, EU and India. Currently working with clients in the PST timezone.<br><br>My usual work week involves :<br> <ul> <li>Automating SecOps : Building automation using Golang or Python to effectively manage infrastructure security at scale.</li> <li><strong>Code Review</strong> : Review PR changes for any security issues.</li> <li><strong>Threat Modelling New Products</strong> : I consult young startups for helping them threat model their new, to-be launch product.</li><li><strong>Pentesting</strong> : I do web and mobile app pentest for my clients. Still learning the ropes of blockchain security.</li><li><strong>Security Education</strong> : I teach my clients on secure coding and secure cloud deploying practices.</li></ul> <br> In the past, I worked in awesome security teams at Rippling, Gojek and Blinkit. <br>In my free time, I teach about cybersecurity on my youtube channel <a href=\"https://www.youtube.com/c/HackingSimplifiedAS\">HackingSimplified</a>, develop security projects in python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.</p>",
+        "summary": "Security engineer turned founder. I've hacked the US DoD, American Airlines, Google, GM, and IBM—and got acknowledged for it.\n\nAfter 5 years at Rippling and Yahoo, I saw the same problem everywhere: even with 20+ security engineers and $5M budgets, teams couldn't confidently ship secure products.\n\nSo I built [ShipSec.ai](https://shipsec.ai) - an AI-powered security automation platform. Previously founded [SecureMyOrg](https://securemyorg.com), serving clients across US, UK, Singapore, and India.\n\nI teach 15,000+ cybersecurity enthusiasts on [YouTube](https://www.youtube.com/c/HackingSimplifiedAS).",
         "profiles": [
             {
                 "username": "🌏 aseemshrey.in",
                 "url": "https://aseemshrey.in",
-                "network": " "
+                "network": ""
             },
             {
                 "username": "aseemshrey",
@@ -36,6 +36,15 @@
         ]
     },
     "education": [
+        {
+            "endDate": "2025-12-31",
+            "startDate": "2024-08-01",
+            "area": "Privacy Engineering",
+            "studyType": "Master's degree",
+            "institution": "Carnegie Mellon University",
+            "gpa": "",
+            "summary": "Master's degree in Privacy Engineering from Carnegie Mellon University."
+        },
         {
             "endDate": "2019-05-17",
             "startDate": "2015-07-25",
@@ -65,6 +74,39 @@
         }
     ],
     "skills": [
+        {
+            "keywords": [
+                "Product Vision & Strategy",
+                "0-to-1 Product Development",
+                "Product Roadmap",
+                "Customer Discovery",
+                "Product-Market Fit"
+            ],
+            "level": "Advanced",
+            "name": "Product Management"
+        },
+        {
+            "keywords": [
+                "Fundraising & Pitching",
+                "Investor Relations",
+                "Team Building & Hiring",
+                "Cross-functional Leadership",
+                "Strategic Planning"
+            ],
+            "level": "Advanced",
+            "name": "Founder & Leadership"
+        },
+        {
+            "keywords": [
+                "GTM Strategy",
+                "Customer Acquisition",
+                "Stakeholder Management",
+                "Business Development",
+                "Client Relations"
+            ],
+            "level": "Advanced",
+            "name": "Business & Sales"
+        },
         {
             "keywords": [
                 "AWS",
@@ -113,6 +155,14 @@
     ],
     "awards": [
         {
+            "title": "Speaker: CloudNativeSecurityCon North America 2024",
+            "awarder": "CloudNativeSecurityCon"
+        },
+        {
+            "title": "5th in CSAW finals 2017",
+            "awarder": "CSAW"
+        },
+        {
             "title": "HackIM CTF - 1st ( India ), 8th ( World Rank ) - 2018",
             "awarder": "NullCon - Walmart & VirtualBox"
         },
@@ -121,10 +171,10 @@
             "awarder": "Govt of India"
         },
         {
-            "title": "Reported bugs to Google, Myntra, MakeMyTrip, Zoho, IBM, Sony, GM etc"
+            "title": "Reported bugs to US DoD, American Airlines, Google, GM, IBM, MakeMyTrip, Myntra, Zoho, Sony etc"
         },
         {
-            "title": "1st in Terminal Tragedy CTF, NIT Trichy - 2017",
+            "title": "1st in Terminal Tragedy CTF, Pragyan's Week of the Web Event, NIT Trichy - 2017",
             "awarder": "NIT Trichy"
         },
         {
@@ -134,13 +184,55 @@
     ],
     "work": [
         {
-            "summary": "Building something around Asset Inventory and automating security.",
-            "website": "https://assetsentinel.io/",
-            "name": "AssetSentinel.io",
-            "location": "Bangalore, India",
-            "position": "Founder",
-            "startDate": "2023-10-01",
+            "summary": "Building ShipSec.ai - Your AI Product Security Engineer. After 5 years at Rippling and Yahoo, I kept seeing the same issue — even with 20+ security engineers and $5M+ budgets, we couldn't confidently say if our product features going live were secure or not. That's why I started building ShipSec.ai.",
+            "website": "https://shipsec.ai/",
+            "name": "ShipSecAI",
+            "location": "San Francisco Bay Area",
+            "position": "Founder & CEO",
+            "startDate": "2025-05-01",
+            "highlights": [
+                "**Product & Vision:** Built an open-source no-code security automation platform from 0 to 1, defining product vision and roadmap to help companies ship secure products faster.",
+                "**Fundraising & Pitching:** Pitched to 50+ investors, securing spots in Draper University Hero Accelerator and Antler EIR program. Refined pitch deck through hundreds of iterations based on investor feedback.",
+                "**Team Building & Hiring:** Built and managed a distributed team, conducting technical and cultural interviews, defining roles, and establishing team processes and workflows.",
+                "**Customer Discovery:** Conducted 100+ customer interviews with engineering teams and security leaders to validate product-market fit and iterate on features.",
+                "**Go-to-Market:** Developed GTM strategy, created marketing content, built community presence, and established partnerships with security tools and platforms.",
+                "**Technical Leadership:** Led architecture decisions, code reviews, and technical implementation while balancing founder responsibilities."
+            ]
+        },
+        {
+            "summary": "Entrepreneur in Residence at Antler, working on building ShipSec.ai.",
+            "website": "https://www.antler.co/",
+            "name": "Antler",
+            "location": "New York City Metropolitan Area",
+            "position": "Entrepreneur in Residence",
+            "startDate": "2025-10-01",
+            "endDate": "2025-11-30",
             "highlights": []
+        },
+        {
+            "summary": "Selected for the DraperU Hero Accelerator Program. Staying at their university building in San Mateo and building ShipSec.ai.",
+            "website": "https://draperuniversity.com/",
+            "name": "Draper University",
+            "location": "San Mateo, California, United States",
+            "position": "Builder",
+            "startDate": "2025-05-01",
+            "endDate": "2025-06-30",
+            "highlights": []
+        },
+        {
+            "summary": "SecureMyOrg - A CyberSecurity Remote Partner for your company, serving clients in US, UK, Singapore and India.",
+            "website": "https://securemyorg.com/",
+            "name": "SecureMyOrg",
+            "location": "Remote",
+            "position": "Founder & Security Consultant",
+            "startDate": "2024-01-01",
+            "highlights": [
+                "**Business Development:** Acquired and served 15+ clients across US, UK, Singapore, and India providing VAPT, cloud security audits, and remote security engineering services.",
+                "**Client Management:** Managed end-to-end client relationships, from initial sales calls to project delivery, maintaining 95%+ client satisfaction and retention.",
+                "**Service Delivery:** Delivered penetration testing, security audits, and security consulting services while managing project timelines, scope, and deliverables.",
+                "**Team Coordination:** Coordinated with freelance security engineers and contractors to scale service delivery based on client needs.",
+                "**Financial Operations:** Managed invoicing, contracts, pricing strategy, and revenue operations as a solo founder building a profitable consulting business."
+            ]
         },
         {
             "summary": "Working in the Security Engineering and Automation team of the Paranoids ( Yahoo Security Collective ).",
@@ -151,7 +243,7 @@
             "startDate": "2023-08-01",
             "endDate": "2023-12-31",
             "highlights": [
-                "<strong>SEA Team:</strong> Built some automation to improve the current security systems."
+                "**SEA Team:** Built some automation to improve the current security systems."
             ]
         },
         {
@@ -163,9 +255,9 @@
             "startDate": "2022-02-28",
             "endDate": "2023-09-29",
             "highlights": [
-                "<strong>InfraSec Team :</strong> Building automation around Vulnerability Management System ( VMS ). Also automated a few security processes for sec infra.",
-                "<strong>Assurance Team :</strong> Part of this team to build automation for product security. Helped in doing automated dynamic application security testing ( DAST ).",
-                "<strong>ProdSec Team :</strong> Got started working with this team, doing threat modelling, code reviews etc."
+                "**InfraSec Team :** Building automation around Vulnerability Management System ( VMS ). Also automated a few security processes for sec infra.",
+                "**Assurance Team :** Part of this team to build automation for product security. Helped in doing automated dynamic application security testing ( DAST ).",
+                "**ProdSec Team :** Got started working with this team, doing threat modelling, code reviews etc."
             ]
         },
         {
@@ -177,20 +269,20 @@
             "startDate": "2021-02-01",
             "endDate": "2022-02-19",
             "highlights": [
-                "<strong><a href=\"https://www.gojek.io/blog/compliance-as-code\">Compliance As Code</a> :</strong> CIS Benchmark auto remediation in Google Cloud using Google Cloud Run.",
-                "<strong>Web App & Android Pentesting :</strong> Pentesting for any feature release in the GoJek web API backend and GoJek Android application.",
-                "<strong>Red Teaming :</strong> Found critcal vulnerabilities and escalated privileges to gain admin access to almost all of the GoJek Infrastructure.",
-                "<strong>Code Reviews :</strong> Code reviews for any feature release in the GoJek API or mobile application.",
-                "<strong>GoSecCon :</strong> Organised the first ever security conference of GoJek, which included a CTF competition + external and internal speaker talks over a span of 2 days."
+                "**[Compliance As Code](https://www.gojek.io/blog/compliance-as-code):** CIS Benchmark auto remediation in Google Cloud using Google Cloud Run.",
+                "**Web App & Android Pentesting :** Pentesting for any feature release in the GoJek web API backend and GoJek Android application.",
+                "**Red Teaming :** Found critcal vulnerabilities and escalated privileges to gain admin access to almost all of the GoJek Infrastructure.",
+                "**Code Reviews :** Code reviews for any feature release in the GoJek API or mobile application.",
+                "**GoSecCon :** Organised the first ever security conference of GoJek, which included a CTF competition + external and internal speaker talks over a span of 2 days."
             ]
         },
         {
             "highlights": [
-                "<strong>DNS-As-Code</strong> : Created from scratch an automated pipeline using terraform to create DNS entries in cloudflare as well as Route53 with failover option for easy switching to either of the DNS providers\n<strong>Built Using</strong> : terraform",
-                "<strong>G-Shield Security Bot</strong> : Created from scratch a github bot with the intention of shift-left, bringing security closer to the developer workflow. It scans each PR for common security issues like hardcoded secrets, code smells, vulnerable docker images, sensitive mount point etc. The code is modular and thus new modules have been easily added to it by other team members.\n<strong>Built Using</strong> : python, celery and github APIs",
-                "<strong>Temporary credentials for DB</strong> : Integrated vault with DBs and github so that users can generate temp credentials for database based on their github team",
-                "<strong>Cognito Integration</strong> : Worked with multiple teams to integrate AWS cognito in legacy APIs to provide better authentication workflows like social oauth ( such as google auth ) and OTP based workflow",
-                "<strong>OauthProxy</strong> : Integrated oauthproxy for gsuite authentication and compliance to some of our internal applications"
+                "**DNS-As-Code** : Created from scratch an automated pipeline using terraform to create DNS entries in cloudflare as well as Route53 with failover option for easy switching to either of the DNS providers\n**Built Using** : terraform",
+                "**G-Shield Security Bot** : Created from scratch a github bot with the intention of shift-left, bringing security closer to the developer workflow. It scans each PR for common security issues like hardcoded secrets, code smells, vulnerable docker images, sensitive mount point etc. The code is modular and thus new modules have been easily added to it by other team members.\n**Built Using** : python, celery and github APIs",
+                "**Temporary credentials for DB** : Integrated vault with DBs and github so that users can generate temp credentials for database based on their github team",
+                "**Cognito Integration** : Worked with multiple teams to integrate AWS cognito in legacy APIs to provide better authentication workflows like social oauth ( such as google auth ) and OTP based workflow",
+                "**OauthProxy** : Integrated oauthproxy for gsuite authentication and compliance to some of our internal applications"
             ],
             "summary": "Just after college have joined this as the 2nd member of the security team, just after it's creation a month earlier. The team and manager are awesome here. I've been working on a lot of interesting projects here. Some of the highlights are :",
             "website": "http://www.grofers.com",
