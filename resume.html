@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Aseem Shrey</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-  <style>
-  /********************************************
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Aseem Shrey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      /********************************************
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
 *******************************************/
@@ -152,7 +152,6 @@ html {
   letter-spacing: 0;
   line-height: 1.46153846;
   text-align: left;
-  -webkit-text-size-adjust: 100%;
 }
 
 p {
@@ -191,10 +190,6 @@ em {
   color: #757575;
 }
 
-blockquote {
-  margin-bottom: 1em;
-}
-
 strong {
   font-weight: 700;
 }
@@ -223,6 +218,10 @@ section .location {
 
 #profiles .item {
   padding: 0;
+}
+
+#header {
+  margin-bottom: 1rem;
 }
 
 #header > #profiles,
@@ -267,10 +266,13 @@ section .location {
   border-radius: 4px;
 }
 
+.section.summary header {
+  margin-top: 1rem;
+}
+
 .main-summary {
   background: #f1f8ff;
   padding: 1.2em 1em;
-  margin-top: 1rem;
 }
 
 .main-summary p {
@@ -570,15 +572,12 @@ section .location {
 
 #references .item {
   padding-left: 0.5em;
+  margin-bottom: 1em;
   border-left: 5px solid #ff6d1f;
 }
 
-.toggle-item {
-  display: none;
-}
-
 .section > section > section {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /******************
@@ -631,34 +630,6 @@ section .location {
   .section > section:not(.main-summary) {
     margin-left: 1.67rem;
   }
-  .toggle-item {
-    transform: translate(-9999px);
-  }
-  .toggle-item + label {
-    display: block;
-  }
-  .toggle-item:checked + label:after {
-    content: "\f0d7";
-  }
-  .toggle-item + label:after {
-    float: left;
-    cursor: pointer;
-    margin-left: -20px;
-    color: #aaa;
-    font-size: 16px;
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
-    content: "\f0da";
-  }
-  .toggle-item ~ .item {
-    height: 0;
-    opacity: 0;
-  }
-  .toggle-item:checked ~ .item {
-    height: auto;
-    opacity: 1;
-    transition: all 0.5s linear;
-  }
   .company::before,
   .institution::before,
   .organization::before,
@@ -682,6 +653,15 @@ section .location {
 }
 
 @media print {
+  #profiles a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #profiles .url .show-only-url-print {
+    display: none;
+  }
+  #profiles .url a::after {
+    content: attr(href);
+  }
   #resume {
     margin: 0.1em;
     padding: 0.1em;
@@ -694,6 +674,9 @@ section .location {
   }
   .item-count {
     display: none;
+  }
+  .company a {
+    color: #40484f;
   }
   .company::before,
   .institution::before,
@@ -716,7 +699,8 @@ section .location {
     padding-bottom: 0.15rem;
   }
   .section > section > section {
-    margin: 0 0 1em 0;
+    border-bottom: 1px solid #fdfdfd;
+    margin: .5em 0;
   }
   .section > section > section:last-of-type {
     margin: 0;
@@ -744,7 +728,7 @@ section .location {
   ul.keywords li::after,
   ul.courses li::after {
     padding: 0 0 0 0.1rem;
-    content: " |";
+    content: ", ";
   }
   ul.keywords::before,
   ul.courses::before {
@@ -752,14 +736,28 @@ section .location {
     font-weight: 600;
   }
   #skills .item {
-    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem 0;
     padding: 0;
+  }
+  #skills .level {
+    margin: 0.1rem 0;
+    font-weight: 400;
+  }
+  #skills .keywords {
+    font-size: 0.9rem;
+    margin: 0;
   }
   .highlights {
     margin: 0.5em 0 0 0;
   }
+  .highlights > li > p {
+    margin-bottom: 0.3em;
+  }
   ul.keywords::before {
-    content: "Skills acquired: ";
+    content: "Skills: ";
+    font-size: 1rem;
   }
   #skills .keywords::before {
     content: none;
@@ -770,6 +768,12 @@ section .location {
   }
   ul.courses::before {
     content: "Major courses: ";
+    font-size: 1rem;
+  }
+  ul.keywords li,
+  ul.courses li {
+    font-size: 1rem;
+    line-height: inherit;
   }
   ul.keywords li:last-of-type::after,
   ul.courses li:last-of-type::after {
@@ -789,585 +793,795 @@ section .location {
     display: block;
     opacity: 1 !important;
   }
-  .fa-map-marker-alt:before {
+  .fa-location-dot:before {
     padding-left: 0.1em;
   }
 }
 
-  </style>
-  
+    </style>
   </head>
   <body>
-  
-  <div id="resume">
-    	<header id="header" class="clear">
-    		<img class="image" src="https://avatars2.githubusercontent.com/u/17861054?s&#x3D;460&amp;u&#x3D;3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&amp;v&#x3D;4" alt="Aseem Shrey" />
-    		<div class="middle">
-    			<h1 class="name">Aseem Shrey</h1>
-    			<h2 class="label">Founder SecureMyOrg | Security Engineer 🇮🇳 | Builder 🛠️</h2>
-    		</div>
-    
-    
-    
-    		<div id="contact">
-    		</div>
-    
-    		<div id="profiles">
-    			<div class="item">
-    				<div class="username">
-    					<span class="fab fa-- - social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://aseemshrey.in">🌏 aseemshrey.in</a>
-    					</span>
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fab fa-twitter twitter social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://twitter.com/AseemShrey">aseemshrey</a>
-    					</span>
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fab fa-github github social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://github.com/LuD1161">LuD1161</a>
-    					</span>
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fab fa-youtube youtube social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng">HackingSimplified</a>
-    					</span>
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fab fa-linkedin linkedin social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://www.linkedin.com/in/aseemshrey/">Aseem Shrey</a>
-    					</span>
-    				</div>
-    			</div>
-    		</div>
-    	</header>
-    
-    	<section class="section">
-    		<section class="main-summary">
-    			<div><p>Hi 👋<br>Myself, Aseem. I am the founder of <a href="https://securemyorg.com">SecureMyOrg</a>, where we offer VAPT, Cloud security audit and remote security engineers as a service. In my free time, I explore the cybersecurity space for interesting problems to solve. I've worked as a freelance cybersecurity consultant, contracting my services at a few organisations in US, EU and India. Currently working with clients in the PST timezone.<br><br>My usual work week involves :<br> <ul> <li>Automating SecOps : Building automation using Golang or Python to effectively manage infrastructure security at scale.</li> <li><strong>Code Review</strong> : Review PR changes for any security issues.</li> <li><strong>Threat Modelling New Products</strong> : I consult young startups for helping them threat model their new, to-be launch product.</li><li><strong>Pentesting</strong> : I do web and mobile app pentest for my clients. Still learning the ropes of blockchain security.</li><li><strong>Security Education</strong> : I teach my clients on secure coding and secure cloud deploying practices.</li></ul> <br> In the past, I worked in awesome security teams at Rippling, Gojek and Blinkit. <br>In my free time, I teach about cybersecurity on my youtube channel <a href="https://www.youtube.com/c/HackingSimplifiedAS">HackingSimplified</a>, develop security projects in python, tinker with IoT security, read books 📚, play games 🎮, run 🏃‍♂️ and bicycle 🚴‍♂️.</p></p></div>
-    		</section>
-    	</section>
-    
-    <section class="section">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-    			<h3 class="name">
-    				Cloud &amp; k8s Security
-    			</h3>
-    			 
-    			<div class="level advanced">
-    				<em>Advanced</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>AWS</li>
-    				<li>GCP</li>
-    				<li>Kubernetes</li>
-    				<li>Guard Duty</li>
-    				<li>Macie</li>
-    				<li>Trusted Advisor</li>
-    				<li>Cognito</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				App Pentesting
-    			</h3>
-    			 
-    			<div class="level master">
-    				<em>Master</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>OWASP Top 10</li>
-    				<li>Recon automation</li>
-    				<li>Android</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Python
-    			</h3>
-    			 
-    			<div class="level master">
-    				<em>Master</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>flask</li>
-    				<li>django</li>
-    				<li>requests</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Golang
-    			</h3>
-    			 
-    			<div class="level intermediate">
-    				<em>Intermediate</em>
-    				<div class="bar"></div>
-    			</div>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Researching
-    			</h3>
-    			 
-    			<div class="level intermediate">
-    				<em>Intermediate</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>ctfs</li>
-    				<li>malware</li>
-    				<li>IDA</li>
-    				<li>r2</li>
-    			</ul>
-    		</div>
-    	</section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(5)</span></h2>
-      </header>
-    
-      <section id="work">
-        <section class="work-item">
-    
-            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-0"></label>
-    
-    			<header class="clear">
-    				<div class="position">Founder</div>
-    				<div class="company">AssetSentinel.io</div>
-    				<div class="date">
-    				  <span class="startDate">Oct 2023</span>
-    					<span class="endDate">- Current</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    			</span>
-        	<span class="website">
-        		<a target="_blank" href="https://assetsentinel.io/">https://assetsentinel.io/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary"><p>Building something around Asset Inventory and automating security.</p></div>
-        	</div>
+    <div id="resume">
+      	<header id="header" class="clear">
+      		<img class="image" src="https://avatars2.githubusercontent.com/u/17861054?s&#x3D;460&amp;u&#x3D;3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&amp;v&#x3D;4" alt="Aseem Shrey" />
+      		<div class="middle">
+      			<h1 class="name">Aseem Shrey</h1>
+      			<h2 class="label">Building ShipSec AI - Your AI Security Copilot | Prev - Security Engg @ Rippling, Yahoo, Blinkit &amp; Gojek | Privacy Engg @ CMU</h2>
+      		</div>
+      
+      		<span class="location">
+      			<span class="city">San Francisco,</span>
+      			<span class="region">California</span>
+      			<span class="countryCode">(US)</span>
+      		</span>
+      
+      
+      		<div id="contact">
+      		</div>
+      
+      		<div id="profiles">
+      			<div class="item">
+      			</div>
+      			<div class="item">
+      				<div class="username">
+      					<span class="fa-brands fa-twitter twitter social"></span>
+      					<span class="url">
+      						<a target="_blank" href="https://twitter.com/AseemShrey"><span class="show-only-url-print">aseemshrey</span></a>
+      					</span>
+      				</div>
+      			</div>
+      			<div class="item">
+      				<div class="username">
+      					<span class="fa-brands fa-github github social"></span>
+      					<span class="url">
+      						<a target="_blank" href="https://github.com/LuD1161"><span class="show-only-url-print">LuD1161</span></a>
+      					</span>
+      				</div>
+      			</div>
+      			<div class="item">
+      				<div class="username">
+      					<span class="fa-brands fa-youtube youtube social"></span>
+      					<span class="url">
+      						<a target="_blank" href="https://www.youtube.com/channel/UCARsgS1stRbRgh99E63Q3ng"><span class="show-only-url-print">HackingSimplified</span></a>
+      					</span>
+      				</div>
+      			</div>
+      			<div class="item">
+      				<div class="username">
+      					<span class="fa-brands fa-linkedin linkedin social"></span>
+      					<span class="url">
+      						<a target="_blank" href="https://www.linkedin.com/in/aseemshrey/"><span class="show-only-url-print">Aseem Shrey</span></a>
+      					</span>
+      				</div>
+      			</div>
+      			<div class="item">
+      				<div class="username">
+      					<span class="fa-brands fa-medium medium social"></span>
+      					<span class="url">
+      						<a target="_blank" href="https://aseem-shrey.medium.com/"><span class="show-only-url-print">aseem-shrey</span></a>
+      					</span>
+      				</div>
+      			</div>
+      		</div>
+      	</header>
+      
+      	<section class="section summary">
+          <header>
+            <h2 class="section-title">summary</h2>
+          </header>
+      		<section class="main-summary">
+      			<div><p>Security engineer turned founder. I've hacked the US DoD, American Airlines, Google, GM, and IBM—and got acknowledged for it.</p>
+      <p>After 5 years at Rippling and Yahoo, I saw the same problem everywhere: even with 20+ security engineers and $5M budgets, teams couldn't confidently ship secure products.</p>
+      <p>So I built <a href="https://shipsec.ai">ShipSec.ai</a> - an AI-powered security automation platform. Previously founded <a href="https://securemyorg.com">SecureMyOrg</a>, serving clients across US, UK, Singapore, and India.</p>
+      <p>I teach 15,000+ cybersecurity enthusiasts on <a href="https://www.youtube.com/c/HackingSimplifiedAS">YouTube</a>.</p>
+      </div>
+      		</section>
+      	</section>
+      
+      <section class="section">
+        <header>
+          <h2 class='section-title'>Publications</h2>
+        </header>
+        <section id="publications">
+          <section class="publication-item">
+            <label for="publication-item-0"></label>
+      
+            <header class="clear">
+              <span class="date">
+                Jun 2024
+              </span>
+              <div class="header-left">
+                <span class="name">
+                  Security Champions LeaderBoard - Building and Gamifying the Security Culture
+                </span>
+                <span class="publisher">
+                  in CloudNativeSecurityCon North America 2024
+                </span>
+              </div>
+             
+            </header>
+      
+            <div class="item">
+              <div class="summary"><p>Presented on building and gamifying security culture through a security champions leaderboard to improve developer security awareness and find early adopters for security initiatives.</p>
+      </div>
+            </div>
+          </section>
+          <section class="publication-item">
+            <label for="publication-item-1"></label>
+      
+            <header class="clear">
+              <span class="date">
+                Nov 2022
+              </span>
+              <div class="header-left">
+                <span class="name">
+                  Enforcing Security Best Practices using CI
+                </span>
+                <span class="publisher">
+                  in DevSecOps Days India 2022
+                </span>
+              </div>
+             
+            </header>
+      
+            <div class="item">
+              <div class="summary"><p>Co-presented with Nancy Chauhan on automating security best practices through continuous integration pipelines.</p>
+      </div>
+            </div>
+          </section>
+          <section class="publication-item">
+            <label for="publication-item-2"></label>
+      
+            <header class="clear">
+              <span class="date">
+                Feb 2022
+              </span>
+              <div class="header-left">
+                <span class="name">
+                  Starting with Android Static Analysis
+                </span>
+                <span class="publisher">
+                  in IWCON-S22 (Infosec Writeups Conference)
+                </span>
+              </div>
+             
+            </header>
+      
+            <div class="item">
+              <div class="summary"><p>Demonstrated how to start with Android static analysis, covering tools like JADX and APKTool for finding security vulnerabilities.</p>
+      </div>
+            </div>
+          </section>
+          <section class="publication-item">
+            <label for="publication-item-3"></label>
+      
+            <header class="clear">
+              <span class="date">
+                Dec 2021
+              </span>
+              <div class="header-left">
+                <span class="name">
+                  Getting Started with Android Pentesting
+                </span>
+                <span class="publisher">
+                  in VULNCON 2021
+                </span>
+              </div>
+             
+            </header>
+      
+            <div class="item">
+              <div class="summary"><p>Introduced fundamentals of Android app pentesting including basic components, static analysis tools, and practical demonstrations.</p>
+      </div>
+            </div>
+          </section>
+          <section class="publication-item">
+            <label for="publication-item-4"></label>
+      
+            <header class="clear">
+              <span class="date">
+                Apr 2020
+              </span>
+              <div class="header-left">
+                <span class="name">
+                  Owning Your PC from an Innocuous USB
+                </span>
+                <span class="publisher">
+                  in OWASP Bangalore
+                </span>
+              </div>
+             
+            </header>
+      
+            <div class="item">
+              <div class="summary"><p>Demonstrated BadUSB attacks, covering HID exploitation, reverse shells, and rubber ducky attack methodology.</p>
+      </div>
+            </div>
+          </section>
+          <section class="publication-item">
+            <label for="publication-item-5"></label>
+      
+            <header class="clear">
+              <span class="date">
+                Sep 2019
+              </span>
+              <div class="header-left">
+                <span class="name">
+                  Owning Your PC Through An Innocuous USB
+                </span>
+                <span class="publisher">
+                  in SECARMY Security Webcast
+                </span>
+              </div>
+             
+            </header>
+      
+            <div class="item">
+              <div class="summary"><p>Early talk on BadUSB attacks, available hardware, HID introduction, and metasploit-based attack demonstrations.</p>
+      </div>
+            </div>
+          </section>
         </section>
-        <section class="work-item">
-    
-            <input id="work-item-1" type="checkbox" class="toggle-item" />
-            <label for="work-item-1"></label>
-    
-    			<header class="clear">
-    				<div class="position">Security Engineer ( Contractor )</div>
-    				<div class="company">Yahoo</div>
-    				<div class="date">
-    				  <span class="startDate">Aug 2023</span>
-    					<span class="endDate">- Dec 2023</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    			</span>
-        	<span class="website">
-        		<a target="_blank" href="https://www.yahoo.com/">https://www.yahoo.com/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary"><p>Working in the Security Engineering and Automation team of the Paranoids ( Yahoo Security Collective ).</p></div>
-            <ul class="highlights">
-                <li><p><strong>SEA Team:</strong> Built some automation to improve the current security systems.</p></li>
+      </section>
+      <section class="section">
+        <header>
+          <h2 class='section-title'>Work Experience <span class="item-count">(8)</span></h2>
+        </header>
+      
+        <section id="work">
+          <section class="work-item">
+              <label for="work-item-0"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">May 2025</span>
+                      <span class="endDate">- Current</span>
+                  </div>
+                <div class="position">Founder &amp; CEO</div>
+                  <span class="company">
+                    <a target="_blank" href="https://shipsec.ai/">ShipSecAI</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              San Francisco Bay Area
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>Building ShipSec.ai - Your AI Product Security Engineer. After 5 years at Rippling and Yahoo, I kept seeing the same issue — even with 20+ security engineers and $5M+ budgets, we couldn't confidently say if our product features going live were secure or not. That's why I started building ShipSec.ai.</p>
+      </div>
+              <ul class="highlights">
+                <li><p><strong>Product &amp; Vision:</strong> Built an open-source no-code security automation platform from 0 to 1, defining product vision and roadmap to help companies ship secure products faster.</p>
+      </li>
+                <li><p><strong>Fundraising &amp; Pitching:</strong> Pitched to 50+ investors, securing spots in Draper University Hero Accelerator and Antler EIR program. Refined pitch deck through hundreds of iterations based on investor feedback.</p>
+      </li>
+                <li><p><strong>Team Building &amp; Hiring:</strong> Built and managed a distributed team, conducting technical and cultural interviews, defining roles, and establishing team processes and workflows.</p>
+      </li>
+                <li><p><strong>Customer Discovery:</strong> Conducted 100+ customer interviews with engineering teams and security leaders to validate product-market fit and iterate on features.</p>
+      </li>
+                <li><p><strong>Go-to-Market:</strong> Developed GTM strategy, created marketing content, built community presence, and established partnerships with security tools and platforms.</p>
+      </li>
+                <li><p><strong>Technical Execution:</strong> Built the core platform infrastructure and features hands-on, contributing to architecture decisions and technical implementation alongside the CTO.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work-item">
+              <label for="work-item-1"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">Oct 2025</span>
+                      <span class="endDate">- Nov 2025</span>
+                  </div>
+                <div class="position">Entrepreneur in Residence</div>
+                  <span class="company">
+                    <a target="_blank" href="https://www.antler.co/">Antler</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              New York City Metropolitan Area
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>Entrepreneur in Residence at Antler, working on building ShipSec.ai.</p>
+      </div>
+              <ul class="highlights">
+                <li><p>Selected for Antler's highly competitive EIR program (3% acceptance rate) - a global early-stage VC that invests in founders from day zero.</p>
+      </li>
+                <li><p>Developed ShipSec.ai's go-to-market strategy and refined business model through weekly pitch sessions and mentorship from successful founders.</p>
+      </li>
+                <li><p>Built relationships with VCs, operators, and technical advisors in NYC's startup ecosystem.</p>
+      </li>
+                <li><p>Participated in cohort workshops on fundraising, scaling, and building technical teams.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work-item">
+              <label for="work-item-2"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">May 2025</span>
+                      <span class="endDate">- Jun 2025</span>
+                  </div>
+                <div class="position">Builder</div>
+                  <span class="company">
+                    <a target="_blank" href="https://draperuniversity.com/">Draper University</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              San Mateo, California, United States
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>Selected for the DraperU Hero Accelerator Program. Staying at their university building in San Mateo and building ShipSec.ai.</p>
+      </div>
+              <ul class="highlights">
+                <li><p>Selected for Tim Draper's prestigious Hero Accelerator program - an immersive 5-week program at Draper University's San Mateo campus.</p>
+      </li>
+                <li><p>Refined ShipSec.ai's pitch through daily practice sessions and feedback from Tim Draper, successful entrepreneurs, and Silicon Valley investors.</p>
+      </li>
+                <li><p>Built MVP features and validated product assumptions through rapid prototyping and user testing with program cohort.</p>
+      </li>
+                <li><p>Networked with fellow founders, mentors, and VCs in the Bay Area startup ecosystem.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work-item">
+              <label for="work-item-3"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">Jan 2024</span>
+                      <span class="endDate">- Current</span>
+                  </div>
+                <div class="position">Founder &amp; Security Consultant</div>
+                  <span class="company">
+                    <a target="_blank" href="https://securemyorg.com/">SecureMyOrg</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              Remote
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>SecureMyOrg - A CyberSecurity Remote Partner for your company, serving clients in US, UK, Singapore and India.</p>
+      </div>
+              <ul class="highlights">
+                <li><p><strong>Business Development:</strong> Acquired and served 15+ clients across US, UK, Singapore, and India providing VAPT, cloud security audits, and remote security engineering services.</p>
+      </li>
+                <li><p><strong>Client Management:</strong> Managed end-to-end client relationships, from initial sales calls to project delivery, maintaining 95%+ client satisfaction and retention.</p>
+      </li>
+                <li><p><strong>Service Delivery:</strong> Delivered penetration testing, security audits, and security consulting services while managing project timelines, scope, and deliverables.</p>
+      </li>
+                <li><p><strong>Team Coordination:</strong> Coordinated with freelance security engineers and contractors to scale service delivery based on client needs.</p>
+      </li>
+                <li><p><strong>Financial Operations:</strong> Managed invoicing, contracts, pricing strategy, and revenue operations as a solo founder building a profitable consulting business.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work-item">
+              <label for="work-item-4"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">Aug 2023</span>
+                      <span class="endDate">- Dec 2023</span>
+                  </div>
+                <div class="position">Security Engineer ( Contractor )</div>
+                  <span class="company">
+                    <a target="_blank" href="https://www.yahoo.com/">Yahoo</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              Remote, US
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>Worked in the Security Engineering and Automation team of the Paranoids ( Yahoo Security Collective ).</p>
+      </div>
+              <ul class="highlights">
+                <li><p><strong>SEA Team:</strong> Automated critical migrations for on-prem security deployments as part of the Security Engineering and Automation team.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work-item">
+              <label for="work-item-5"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">Feb 2022</span>
+                      <span class="endDate">- Sep 2023</span>
+                  </div>
+                <div class="position">Security Engineer</div>
+                  <span class="company">
+                    <a target="_blank" href="https://www.rippling.com/">Rippling</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              Bangalore, India
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>Worked in the SecInfra team, automating security through code.</p>
+      </div>
+              <ul class="highlights">
+                <li><p><strong>InfraSec Team:</strong> Built automation around Vulnerability Management System ( VMS ) and automated security processes for security infrastructure.</p>
+      </li>
+                <li><p><strong>Assurance Team:</strong> Built automation for product security and implemented automated dynamic application security testing ( DAST ).</p>
+      </li>
+                <li><p><strong>ProdSec Team:</strong> Performed threat modelling and code reviews for product releases.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work-item">
+              <label for="work-item-6"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">Feb 2021</span>
+                      <span class="endDate">- Feb 2022</span>
+                  </div>
+                <div class="position">Senior Information Security Engineer</div>
+                  <span class="company">
+                    <a target="_blank" href="https://gojek.com/">GoJek</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              Bangalore, India
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>Worked in the ProdSec team, driving Shift Left culture at GoJek.</p>
+      </div>
+              <ul class="highlights">
+                <li><p><strong><a href="https://www.gojek.io/blog/compliance-as-code">Compliance As Code</a>:</strong> Built CIS Benchmark auto-remediation system in Google Cloud using Google Cloud Run.</p>
+      </li>
+                <li><p><strong>Web App &amp; Android Pentesting:</strong> Performed penetration testing for feature releases in the GoJek web API backend and Android application.</p>
+      </li>
+                <li><p><strong>Red Teaming:</strong> Found critical vulnerabilities and escalated privileges to gain admin access to almost all of the GoJek infrastructure.</p>
+      </li>
+                <li><p><strong>Code Reviews:</strong> Conducted code reviews for feature releases in the GoJek API and mobile application.</p>
+      </li>
+                <li><p><strong>GoSecCon:</strong> Organized GoJek's first security conference, which included a CTF competition and speaker talks over 2 days.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+          <section class="work-item">
+              <label for="work-item-7"></label>
+              <header class="clear">
+                  <div class="date">
+                    <span class="startDate">Apr 2019</span>
+                      <span class="endDate">- Jan 2021</span>
+                  </div>
+                <div class="position">Security Engineer</div>
+                  <span class="company">
+                    <a target="_blank" href="http://www.grofers.com">Blinkit ( formerly Grofers )</a>
+                  </span>
+              </header>
+            <span class="location">
+              <span class="fa-solid fa-location-dot"></span>
+              Gurgaon, India
+            </span>
+             <div class="item" id="work-item">
+              <div class="summary"><p>Joined as the 2nd member of the security team at Blinkit (formerly Grofers), one month after its creation. Built security infrastructure and processes from the ground up.</p>
+      </div>
+              <ul class="highlights">
+                <li><p><strong>DNS-As-Code:</strong> Created from scratch an automated pipeline using terraform to create DNS entries in Cloudflare and Route53 with failover option for easy switching between DNS providers.</p>
+      </li>
+                <li><p><strong>G-Shield Security Bot:</strong> Created from scratch a GitHub bot for shift-left security. Scans each PR for hardcoded secrets, code smells, vulnerable docker images, and sensitive mount points using Python, Celery, and GitHub APIs.</p>
+      </li>
+                <li><p><strong>Temporary Credentials for DB:</strong> Integrated Vault with databases and GitHub so users can generate temporary credentials based on their GitHub team membership.</p>
+      </li>
+                <li><p><strong>Cognito Integration:</strong> Worked with multiple teams to integrate AWS Cognito in legacy APIs to provide better authentication workflows like social OAuth (Google Auth) and OTP-based workflow.</p>
+      </li>
+                <li><p><strong>OAuthProxy:</strong> Integrated OAuthProxy for GSuite authentication and compliance to internal applications.</p>
+      </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </section>
+        <section class="section">
+          <header>
+            <h2 class="section-title">Awards <span class="item-count">(5)</span></h2>
+          </header>
+          <section id="awards">
+              <section class="award-item">
+                  <label for="award-item-0"></label>
+      
+                <header class="clear">
+                  <div class="header-left">
+                      <div class="title">
+                        Discovered Critical Data Leak in India&#x27;s GST Portal - 2024
+                      </div>
+                      <div class="awarder">
+                        Government of India
+                      </div>
+                  </div>
+                </header>
+      
+                <div class="item">
+                    <div class="summary"><p>Found critical vulnerability exposing sensitive business data that could be used to manipulate stock market. Responsibly disclosed to government.</p>
+      </div>
+                </div>
+              </section>
+              <section class="award-item">
+      
+                <header class="clear">
+                  <div class="header-left">
+                      <div class="title">
+                        HackIM CTF - 1st ( India ), 8th ( World Rank ) - 2018
+                      </div>
+                      <div class="awarder">
+                        NullCon - Walmart &amp; VirtualBox
+                      </div>
+                  </div>
+                </header>
+      
+                <div class="item">
+                </div>
+              </section>
+              <section class="award-item">
+      
+                <header class="clear">
+                  <div class="header-left">
+                      <div class="title">
+                        Found IDOR Bug in Digilocker ( GoI Initiative ) - Hall of Fame - 2017
+                      </div>
+                      <div class="awarder">
+                        Govt of India
+                      </div>
+                  </div>
+                </header>
+      
+                <div class="item">
+                </div>
+              </section>
+              <section class="award-item">
+      
+                <header class="clear">
+                  <div class="header-left">
+                      <div class="title">
+                        Reported bugs to US DoD, American Airlines, Google, GM, IBM, MakeMyTrip, Myntra, Zoho, Sony etc
+                      </div>
+                  </div>
+                </header>
+      
+                <div class="item">
+                </div>
+              </section>
+              <section class="award-item">
+      
+                <header class="clear">
+                  <div class="header-left">
+                      <div class="title">
+                        CTF Competition Achievements: 5th place CSAW Finals, 1st place Terminal Tragedy (NIT Trichy), Top 20 DRDO CTF - 2017
+                      </div>
+                      <div class="awarder">
+                        Multiple CTF Competitions
+                      </div>
+                  </div>
+                </header>
+      
+                <div class="item">
+                </div>
+              </section>
+          </section>
+        </section>
+      <section class="section">
+        <header>
+          <h2 class='section-title'>Skills</h2>
+        </header>
+        <section id="skills">
+          <div class="item">
+            <h3 class="name">
+              Product Management
+            </h3>
+              <div class="level advanced">
+                  <em>Advanced</em>
+                <div class="bar"></div>
+              </div>
+            <ul class="keywords">
+              <li>Product Vision &amp; Strategy</li>
+              <li>0-to-1 Product Development</li>
+              <li>Product Roadmap</li>
+              <li>Customer Discovery</li>
+              <li>Product-Market Fit</li>
             </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-2" type="checkbox" class="toggle-item" />
-            <label for="work-item-2"></label>
-    
-    			<header class="clear">
-    				<div class="position">Security Engineer</div>
-    				<div class="company">Rippling</div>
-    				<div class="date">
-    				  <span class="startDate">Feb 2022</span>
-    					<span class="endDate">- Sep 2023</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    			</span>
-        	<span class="website">
-        		<a target="_blank" href="https://www.rippling.com/">https://www.rippling.com/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary"><p>Working in the SecInfra team. Automating security through code.</p></div>
-            <ul class="highlights">
-                <li><p><strong>InfraSec Team :</strong> Building automation around Vulnerability Management System ( VMS ). Also automated a few security processes for sec infra.</p></li>
-                <li><p><strong>Assurance Team :</strong> Part of this team to build automation for product security. Helped in doing automated dynamic application security testing ( DAST ).</p></li>
-                <li><p><strong>ProdSec Team :</strong> Got started working with this team, doing threat modelling, code reviews etc.</p></li>
+          </div>
+          <div class="item">
+            <h3 class="name">
+              Founder &amp; Leadership
+            </h3>
+              <div class="level advanced">
+                  <em>Advanced</em>
+                <div class="bar"></div>
+              </div>
+            <ul class="keywords">
+              <li>Fundraising &amp; Pitching</li>
+              <li>Investor Relations</li>
+              <li>Team Building &amp; Hiring</li>
+              <li>Cross-functional Leadership</li>
+              <li>Strategic Planning</li>
             </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-3" type="checkbox" class="toggle-item" />
-            <label for="work-item-3"></label>
-    
-    			<header class="clear">
-    				<div class="position">Senior Information Security Engineer</div>
-    				<div class="company">GoJek</div>
-    				<div class="date">
-    				  <span class="startDate">Feb 2021</span>
-    					<span class="endDate">- Feb 2022</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    			</span>
-        	<span class="website">
-        		<a target="_blank" href="https://gojek.com/">https://gojek.com/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary"><p>Working in the ProdSec team. Driving Shift Left culture at GoJek.</p></div>
-            <ul class="highlights">
-                <li><p><strong><a href="https://www.gojek.io/blog/compliance-as-code">Compliance As Code</a> :</strong> CIS Benchmark auto remediation in Google Cloud using Google Cloud Run.</p></li>
-                <li><p><strong>Web App & Android Pentesting :</strong> Pentesting for any feature release in the GoJek web API backend and GoJek Android application.</p></li>
-                <li><p><strong>Red Teaming :</strong> Found critcal vulnerabilities and escalated privileges to gain admin access to almost all of the GoJek Infrastructure.</p></li>
-                <li><p><strong>Code Reviews :</strong> Code reviews for any feature release in the GoJek API or mobile application.</p></li>
-                <li><p><strong>GoSecCon :</strong> Organised the first ever security conference of GoJek, which included a CTF competition + external and internal speaker talks over a span of 2 days.</p></li>
+          </div>
+          <div class="item">
+            <h3 class="name">
+              Business &amp; Sales
+            </h3>
+              <div class="level advanced">
+                  <em>Advanced</em>
+                <div class="bar"></div>
+              </div>
+            <ul class="keywords">
+              <li>GTM Strategy</li>
+              <li>Customer Acquisition</li>
+              <li>Stakeholder Management</li>
+              <li>Business Development</li>
+              <li>Client Relations</li>
             </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-4" type="checkbox" class="toggle-item" />
-            <label for="work-item-4"></label>
-    
-    			<header class="clear">
-    				<div class="position">Security Engineer</div>
-    				<div class="company">Blinkit ( formerly Grofers )</div>
-    				<div class="date">
-    				  <span class="startDate">Apr 2019</span>
-    					<span class="endDate">- Jan 2021</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    			</span>
-        	<span class="website">
-        		<a target="_blank" href="http://www.grofers.com">http://www.grofers.com</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary"><p>Just after college have joined this as the 2nd member of the security team, just after it's creation a month earlier. The team and manager are awesome here. I've been working on a lot of interesting projects here. Some of the highlights are :</p></div>
-            <ul class="highlights">
-                <li><p><strong>DNS-As-Code</strong> : Created from scratch an automated pipeline using terraform to create DNS entries in cloudflare as well as Route53 with failover option for easy switching to either of the DNS providers</p><p><strong>Built Using</strong> : terraform</p></li>
-                <li><p><strong>G-Shield Security Bot</strong> : Created from scratch a github bot with the intention of shift-left, bringing security closer to the developer workflow. It scans each PR for common security issues like hardcoded secrets, code smells, vulnerable docker images, sensitive mount point etc. The code is modular and thus new modules have been easily added to it by other team members.</p><p><strong>Built Using</strong> : python, celery and github APIs</p></li>
-                <li><p><strong>Temporary credentials for DB</strong> : Integrated vault with DBs and github so that users can generate temp credentials for database based on their github team</p></li>
-                <li><p><strong>Cognito Integration</strong> : Worked with multiple teams to integrate AWS cognito in legacy APIs to provide better authentication workflows like social oauth ( such as google auth ) and OTP based workflow</p></li>
-                <li><p><strong>OauthProxy</strong> : Integrated oauthproxy for gsuite authentication and compliance to some of our internal applications</p></li>
+          </div>
+          <div class="item">
+            <h3 class="name">
+              Cloud &amp; k8s Security
+            </h3>
+              <div class="level advanced">
+                  <em>Advanced</em>
+                <div class="bar"></div>
+              </div>
+            <ul class="keywords">
+              <li>AWS</li>
+              <li>GCP</li>
+              <li>Kubernetes</li>
+              <li>Guard Duty</li>
+              <li>Macie</li>
+              <li>Trusted Advisor</li>
+              <li>Cognito</li>
             </ul>
-        	</div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Awards</h2>
-      </header>
-      <section id="awards">
-        <section class="award-item">
-    
-          <header class="clear">
-            <div class="header-left">
-              <div class="title">
-                HackIM CTF - 1st ( India ), 8th ( World Rank ) - 2018
-              </div>
-              <div class="awarder">
-                NullCon - Walmart &amp; VirtualBox
-              </div>
-            </div>
-          </header>
-          
-          <div class="item">
           </div>
-        </section>
-        <section class="award-item">
-    
-          <header class="clear">
-            <div class="header-left">
-              <div class="title">
-                Found IDOR Bug in Digilocker ( GoI Initiative ) - Hall of Fame - 2017
-              </div>
-              <div class="awarder">
-                Govt of India
-              </div>
-            </div>
-          </header>
-          
           <div class="item">
+            <h3 class="name">
+              App Pentesting
+            </h3>
+              <div class="level master">
+                  <em>Master</em>
+                <div class="bar"></div>
+              </div>
+            <ul class="keywords">
+              <li>OWASP Top 10</li>
+              <li>Recon automation</li>
+              <li>Android</li>
+            </ul>
           </div>
-        </section>
-        <section class="award-item">
-    
-          <header class="clear">
-            <div class="header-left">
-              <div class="title">
-                Reported bugs to Google, Myntra, MakeMyTrip, Zoho, IBM, Sony, GM etc
-              </div>
-            </div>
-          </header>
-          
           <div class="item">
+            <h3 class="name">
+              Python
+            </h3>
+              <div class="level master">
+                  <em>Master</em>
+                <div class="bar"></div>
+              </div>
+            <ul class="keywords">
+              <li>flask</li>
+              <li>django</li>
+              <li>requests</li>
+            </ul>
           </div>
-        </section>
-        <section class="award-item">
-    
-          <header class="clear">
-            <div class="header-left">
-              <div class="title">
-                1st in Terminal Tragedy CTF, NIT Trichy - 2017
-              </div>
-              <div class="awarder">
-                NIT Trichy
-              </div>
-            </div>
-          </header>
-          
           <div class="item">
+            <h3 class="name">
+              Golang
+            </h3>
+              <div class="level intermediate">
+                  <em>Intermediate</em>
+                <div class="bar"></div>
+              </div>
           </div>
-        </section>
-        <section class="award-item">
-    
-          <header class="clear">
-            <div class="header-left">
-              <div class="title">
-                DRDO CTF - Top 20 - 2017
-              </div>
-              <div class="awarder">
-                DRDO
-              </div>
-            </div>
-          </header>
-          
           <div class="item">
+            <h3 class="name">
+              Researching
+            </h3>
+              <div class="level intermediate">
+                  <em>Intermediate</em>
+                <div class="bar"></div>
+              </div>
+            <ul class="keywords">
+              <li>ctfs</li>
+              <li>malware</li>
+              <li>IDA</li>
+              <li>r2</li>
+            </ul>
           </div>
         </section>
       </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>References</h2>
-      </header>
-      <section id="references">
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;I worked with Aseem in the Security Team as his manager and what I really liked about him is his all-around skill. He never backs down from any challenge or new learning thrown at him and made sure he stepped out of the comfort zone to achieve the feat. He has got experience working as Developer and Secops  - Jack of all trades. He also impressed everyone with his sheer dedication to work. Apart from professional development, he has done some fantastic work in his personal skill development. One thing really impressed me how he was able to adapt himself to the new work environment and quickly start initiating projects. His  knowledge in network and application level security is quite impressive. He is definitely a quick learner and with the skillset that he poses, he is really a good security engineer.&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            - Avinash Jain, Security at Microsoft (Identity Platform)
-          </div>
-          <br>
-        </div>
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;I have worked with Aseem for a year. He has a great technical skillset combined with being an excellent problem solver which has helped a lot to solve the Security challenge in the organization. One of the great impressions that has always been shown constantly is the calmness, and creativity that is reflected in every challenge. Happy to work with him and looking forward to future collaboration again!&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            - Kenny Gotama, Security Manager at GoJek
-          </div>
-          <br>
-        </div>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Education <span class="item-count">(3)</span></h2>
-      </header>
-    
-      <section id="education">
-        <section class="education-item">
-            <input id="education-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="education-item-0"></label>
-          <header class="clear">
-            <div class="header-left">
-              <div class="studyType">
-                B Tech.
+      <section class="section">
+        <header>
+          <h2 class='section-title'>Education <span class="item-count">(3)</span></h2>
+        </header>
+      
+        <section id="education">
+          <section class="education-item">
+              <label for="education-item-0"></label>
+            <header class="clear">
+                <div class="date">
+                  <span class="startDate">Aug 2024</span>
+                    <span class="endDate">- Dec 2025</span>
+                </div>
+              <div class="header-left">
+                <div class="studyType">
+                  Master&#x27;s degree
+                </div>
+                <div class="area">
+                  Privacy Engineering
+                </div>
+                <div class="institution">
+                  Carnegie Mellon University
+                </div>
               </div>
-              <div class="area">
-                Information Technology
+            </header>
+      
+      
+      
+            <div class="item">
+                <div class="summary"><p>Privacy Engineering from School of Computer Science, Carnegie Mellon University.</p>
+      </div>
+            </div>
+          </section>
+          <section class="education-item">
+              <label for="education-item-1"></label>
+            <header class="clear">
+                <div class="date">
+                  <span class="startDate">Jul 2015</span>
+                    <span class="endDate">- May 2019</span>
+                </div>
+              <div class="header-left">
+                <div class="studyType">
+                  B Tech.
+                </div>
+                <div class="area">
+                  Information Technology
+                </div>
+                <div class="institution">
+                  IIIT Allahabad
+                </div>
               </div>
-              <div class="institution">
-                IIIT Allahabad
+            </header>
+      
+      
+      
+            <div class="item">
+              <div class='gpa'>
+                <strong> Grade:</strong> <span>7.95</span>
               </div>
+                <div class="summary"><p>Completed my bachelors of technology, with a few electives in cybersecurity. Had been the CyberSecurity Wing Coordintor and the elected member of Student Gymkhana, student body.</p>
+      </div>
             </div>
-            <div class="date">
-              <span class="startDate">
-              2015
-              </span>
-              <span class="endDate">
-              - 2019
-              </span>
-            </div>
-          </header>
-    
-    
-    
-          <div class="item">
-            <div class='gpa'>
-              <strong> Grade:</strong> <span>7.95</span>
-            </div>
-              <div class="summary"><p>Completed my bachelors of technology, with a few electives in cybersecurity. Had been the CyberSecurity Wing Coordintor and the elected member of Student Gymkhana, student body.</p></div>
-          </div>
-        </section>
-        <section class="education-item">
-          <header class="clear">
-            <div class="header-left">
-              <div class="area">
-                Higher Secondary
+          </section>
+          <section class="education-item">
+            <header class="clear">
+                <div class="date">
+                  <span class="startDate">Jan 2012</span>
+                    <span class="endDate">- Jan 2014</span>
+                </div>
+              <div class="header-left">
+                <div class="area">
+                  Higher Secondary
+                </div>
+                <div class="institution">
+                  DPS R K Puram, New Delhi
+                </div>
               </div>
-              <div class="institution">
-                DPS R K Puram, New Delhi
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2012
-              </span>
-              <span class="endDate">
-              - 2014
-              </span>
-            </div>
-          </header>
-    
-    
-    
-          <div class="item">
-            <div class='gpa'>
-              <strong> Grade:</strong> <span>89%</span>
-            </div>
-          </div>
-        </section>
-        <section class="education-item">
-          <header class="clear">
-            <div class="header-left">
-              <div class="area">
-                Secondary
-              </div>
-              <div class="institution">
-                VVRS, Purnea, Bihar
+            </header>
+      
+      
+      
+            <div class="item">
+              <div class='gpa'>
+                <strong> Grade:</strong> <span>89%</span>
               </div>
             </div>
-            <div class="date">
-              <span class="startDate">
-              2005
-              </span>
-              <span class="endDate">
-              - 2012
-              </span>
-            </div>
-          </header>
-    
-    
-    
-          <div class="item">
-            <div class='gpa'>
-              <strong> Grade:</strong> <span>10</span>
-            </div>
-          </div>
+          </section>
         </section>
       </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Languages</h2>
-      </header>
-      <section id="languages">
-        <div class="display">
-          <h3 class="language">
-            Hindi
-          </h3>
-          <div class="item">
-            <div class="level fluency native speaker">
-              <em>Native Speaker</em>
-              <div class="bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="display">
-          <h3 class="language">
-            English
-          </h3>
-          <div class="item">
-            <div class="level fluency fluent">
-              <em>Fluent</em>
-              <div class="bar"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title' class='section-title'>Interests</h2>
-      </header>
-      <section id="interests">
-        <div class="item">
-          <h3 class="name">
-            CyberSecurity 🖥️
-          </h3>
-          <ul class="keywords">
-            <li>web app pentesting</li>
-            <li>reverse engineering</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Reading Books 📚
-          </h3>
-          <ul class="keywords">
-            <li>goodreads-97128738-aseem</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Creating Stuff 💡
-          </h3>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Running 🏃
-          </h3>
-          <ul class="keywords">
-            <li>garmin forerunner45</li>
-            <li>strava-47262934</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Swimming 🏊
-          </h3>
-        </div>
-      </section>
-    </section>
-
+    </div>
   </body>
 </html>
