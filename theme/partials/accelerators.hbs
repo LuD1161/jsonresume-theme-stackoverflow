@@ -1,0 +1,51 @@
+{{#if resume.accelerators.length}}
+<section class="section">
+  <header>
+    <h2 class='section-title'>Accelerators <span class="item-count">({{resume.accelerators.length}})</span></h2>
+  </header>
+  <section id="accelerators">
+    {{#each resume.accelerators}}
+    <section class="project-item">
+      {{#if summary}}
+        <label for="accelerator-item-{{@index}}"></label>
+      {{/if}}
+      {{#if name}}
+      <header class="clear">
+        {{> date startDate=startDate endDate=endDate }}
+        {{#if position}}
+        <div class="position">{{position}}</div>
+        {{/if}}
+        {{#if name}}
+        <div class="company">{{name}}</div>
+        {{/if}}
+      </header>
+      {{/if}}
+      {{#if location}}
+      <span class="location">
+      <span class="fa-solid fa-location-dot"></span>
+      <span class="city">{{location}}</span>
+      </span>
+      {{/if}}
+      {{#if website}}
+      <span class="website">
+        <span class="fa-solid fa-up-right-from-square"></span>
+        <a target="_blank" href="{{website}}">{{website}}</a>
+      </span>
+      {{/if}}
+      <div class="item">
+        {{#if summary}}
+          <div class="summary">{{paragraphSplit summary}}</div>
+        {{/if}}
+        {{#if highlights.length}}
+        <ul class="highlights">
+          {{#each highlights}}
+            <li>{{paragraphSplit .}}</li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </div>
+    </section>
+    {{/each}}
+  </section>
+</section>
+{{/if}}

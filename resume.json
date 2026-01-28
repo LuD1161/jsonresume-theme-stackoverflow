@@ -4,14 +4,14 @@
     },
     "basics": {
         "name": "Aseem Shrey",
-        "label": "Building ShipSec AI - Your AI Security Copilot | Prev - Security Engg @ Rippling, Yahoo, Blinkit & Gojek | Privacy Engg @ CMU",
+        "label": "ShipSecAI - No-Code OSS Security Automation Platform | Prev - Security Engg @ Rippling, Yahoo, Blinkit & Gojek | Privacy Engg @ CMU",
         "image": "https://avatars2.githubusercontent.com/u/17861054?s=460&u=3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&v=4",
         "location": {
             "city": "San Francisco",
             "region": "California",
             "countryCode": "US"
         },
-        "summary": "Security engineer turned founder. I've hacked the US DoD, American Airlines, Google, GM, and IBM—and got acknowledged for it.\n\nAfter 5 years at Rippling and Yahoo, I saw the same problem everywhere: even with 20+ security engineers and $5M budgets, teams couldn't confidently ship secure products.\n\nSo I built [ShipSec.ai](https://shipsec.ai) - an AI-powered security automation platform. Previously founded [SecureMyOrg](https://securemyorg.com), serving clients across US, UK, Singapore, and India.\n\nI teach 15,000+ cybersecurity enthusiasts on [YouTube](https://www.youtube.com/c/HackingSimplifiedAS).",
+        "summary": "Security engineer with 6+ years in AppSec, Cloud Security, ProdSec, and Threat Modeling at Rippling, Yahoo, GoJek, and Blinkit. Built security automation tools, vulnerability management systems, and shift-left security programs from scratch. Acknowledged by US DoD, Google, GM, IBM for finding vulnerabilities.\n\nAlso built products from 0 to 1 - founded [ShipSec.ai](https://github.com/ShipSecAI/studio) (open-source AI security automation platform) and SecureMyOrg (security consulting serving clients in US, UK, Singapore, India). Teaching 15,000+ security enthusiasts on YouTube.",
         "profiles": [
             {
                 "username": "🌏 aseemshrey.in",
@@ -52,7 +52,7 @@
             "area": "Privacy Engineering",
             "studyType": "Master's degree",
             "institution": "Carnegie Mellon University",
-            "gpa": "",
+            "gpa": "3.77/4",
             "summary": "Privacy Engineering from School of Computer Science, Carnegie Mellon University."
         },
         {
@@ -76,46 +76,46 @@
     ],
     "publications": [
         {
-            "name": "Security Champions LeaderBoard - Building and Gamifying the Security Culture",
-            "publisher": "CloudNativeSecurityCon North America 2024",
+            "name": "Automate Once, Run Anywhere: The Docker Moment for Security Workflows",
+            "publisher": "KubeCon + CloudNativeCon Europe 2026",
+            "releaseDate": "2026-03-25",
+            "url": "https://kccnceu2026.sched.com/event/2CW1E/automate-once-run-anywhere-the-docker-moment-for-security-workflows-nancy-chauhan-aseem-shrey-shipsecai",
+            "summary": "Portable, Kubernetes-native security automation using ShipSecAI."
+        },
+        {
+            "name": "Security Champions LeaderBoard - Gamifying Security Culture",
+            "publisher": "CloudNativeSecurityCon NA 2024",
             "releaseDate": "2024-06-26",
             "url": "https://www.youtube.com/watch?v=fC0k0N3zhko",
-            "summary": "Presented on building and gamifying security culture through a security champions leaderboard to improve developer security awareness and find early adopters for security initiatives."
+            "summary": "Building security culture through gamification and developer engagement."
         },
         {
             "name": "Enforcing Security Best Practices using CI",
             "publisher": "DevSecOps Days India 2022",
             "releaseDate": "2022-11-18",
             "url": "https://www.youtube.com/watch?v=IE0hzdFkJYc",
-            "summary": "Co-presented with Nancy Chauhan on automating security best practices through continuous integration pipelines."
+            "summary": "Automating security checks in CI pipelines."
         },
         {
             "name": "Starting with Android Static Analysis",
-            "publisher": "IWCON-S22 (Infosec Writeups Conference)",
+            "publisher": "IWCON-S22",
             "releaseDate": "2022-02-26",
             "url": "https://www.youtube.com/watch?v=fhgfj3lE3pc",
-            "summary": "Demonstrated how to start with Android static analysis, covering tools like JADX and APKTool for finding security vulnerabilities."
+            "summary": "Android static analysis using JADX and APKTool."
         },
         {
             "name": "Getting Started with Android Pentesting",
             "publisher": "VULNCON 2021",
             "releaseDate": "2021-12-07",
             "url": "https://www.youtube.com/watch?v=4weUcAUs8p0",
-            "summary": "Introduced fundamentals of Android app pentesting including basic components, static analysis tools, and practical demonstrations."
+            "summary": "Fundamentals of Android app security testing."
         },
         {
             "name": "Owning Your PC from an Innocuous USB",
             "publisher": "OWASP Bangalore",
             "releaseDate": "2020-04-29",
             "url": "https://www.youtube.com/watch?v=FKBRB3O53mI",
-            "summary": "Demonstrated BadUSB attacks, covering HID exploitation, reverse shells, and rubber ducky attack methodology."
-        },
-        {
-            "name": "Owning Your PC Through An Innocuous USB",
-            "publisher": "SECARMY Security Webcast",
-            "releaseDate": "2019-09-08",
-            "url": "https://www.youtube.com/watch?v=98DxwvyajV8",
-            "summary": "Early talk on BadUSB attacks, available hardware, HID introduction, and metasploit-based attack demonstrations."
+            "summary": "BadUSB attacks and HID exploitation demo."
         }
     ],
     "awards": [
@@ -149,42 +149,9 @@
             "position": "Founder & CEO",
             "startDate": "2025-05-01",
             "highlights": [
-                "**Product & Vision:** Built an open-source no-code security automation platform from 0 to 1, defining product vision and roadmap to help companies ship secure products faster.",
-                "**Fundraising & Pitching:** Pitched to 50+ investors, securing spots in Draper University Hero Accelerator and Antler EIR program. Refined pitch deck through hundreds of iterations based on investor feedback.",
-                "**Team Building & Hiring:** Built and managed a distributed team, conducting technical and cultural interviews, defining roles, and establishing team processes and workflows.",
-                "**Customer Discovery:** Conducted 100+ customer interviews with engineering teams and security leaders to validate product-market fit and iterate on features.",
-                "**Go-to-Market:** Developed GTM strategy, created marketing content, built community presence, and established partnerships with security tools and platforms.",
-                "**Technical Execution:** Built the core platform infrastructure and features hands-on, contributing to architecture decisions and technical implementation alongside the CTO."
-            ]
-        },
-        {
-            "summary": "Entrepreneur in Residence at Antler, working on building ShipSec.ai.",
-            "website": "https://www.antler.co/",
-            "name": "Antler",
-            "location": "New York City Metropolitan Area",
-            "position": "Entrepreneur in Residence",
-            "startDate": "2025-10-01",
-            "endDate": "2025-11-30",
-            "highlights": [
-                "Selected for Antler's highly competitive EIR program (3% acceptance rate) - a global early-stage VC that invests in founders from day zero.",
-                "Developed ShipSec.ai's go-to-market strategy and refined business model through weekly pitch sessions and mentorship from successful founders.",
-                "Built relationships with VCs, operators, and technical advisors in NYC's startup ecosystem.",
-                "Participated in cohort workshops on fundraising, scaling, and building technical teams."
-            ]
-        },
-        {
-            "summary": "Selected for the DraperU Hero Accelerator Program. Staying at their university building in San Mateo and building ShipSec.ai.",
-            "website": "https://draperuniversity.com/",
-            "name": "Draper University",
-            "location": "San Mateo, California, United States",
-            "position": "Builder",
-            "startDate": "2025-05-01",
-            "endDate": "2025-06-30",
-            "highlights": [
-                "Selected for Tim Draper's prestigious Hero Accelerator program - an immersive 5-week program at Draper University's San Mateo campus.",
-                "Refined ShipSec.ai's pitch through daily practice sessions and feedback from Tim Draper, successful entrepreneurs, and Silicon Valley investors.",
-                "Built MVP features and validated product assumptions through rapid prototyping and user testing with program cohort.",
-                "Networked with fellow founders, mentors, and VCs in the Bay Area startup ecosystem."
+                "Built open-source no-code security automation platform ([github.com/ShipSecAI/studio](https://github.com/ShipSecAI/studio)) from 0 to 1; pitched to 50+ investors, securing Draper University and Antler EIR spots.",
+                "Conducted 100+ customer interviews to validate PMF; developed GTM strategy and built community presence.",
+                "Led distributed team building, technical architecture decisions, and hands-on platform development."
             ]
         },
         {
@@ -195,11 +162,8 @@
             "position": "Founder & Security Consultant",
             "startDate": "2024-01-01",
             "highlights": [
-                "**Business Development:** Acquired and served 15+ clients across US, UK, Singapore, and India providing VAPT, cloud security audits, and remote security engineering services.",
-                "**Client Management:** Managed end-to-end client relationships, from initial sales calls to project delivery, maintaining 95%+ client satisfaction and retention.",
-                "**Service Delivery:** Delivered penetration testing, security audits, and security consulting services while managing project timelines, scope, and deliverables.",
-                "**Team Coordination:** Coordinated with freelance security engineers and contractors to scale service delivery based on client needs.",
-                "**Financial Operations:** Managed invoicing, contracts, pricing strategy, and revenue operations as a solo founder building a profitable consulting business."
+                "Acquired and served 15+ clients across US, UK, Singapore, and India providing VAPT, cloud security audits, and security engineering services.",
+                "Managed end-to-end client relationships with 95%+ satisfaction; coordinated freelance engineers to scale delivery."
             ]
         },
         {
@@ -264,81 +228,91 @@
     "skills": [
         {
             "keywords": [
-                "Product Vision & Strategy",
-                "0-to-1 Product Development",
-                "Product Roadmap",
-                "Customer Discovery",
-                "Product-Market Fit"
+                "Threat Modeling",
+                "Security Architecture",
+                "Code Reviews",
+                "Shift-Left Security"
             ],
             "level": "Advanced",
-            "name": "Product Management"
-        },
-        {
-            "keywords": [
-                "Fundraising & Pitching",
-                "Investor Relations",
-                "Team Building & Hiring",
-                "Cross-functional Leadership",
-                "Strategic Planning"
-            ],
-            "level": "Advanced",
-            "name": "Founder & Leadership"
-        },
-        {
-            "keywords": [
-                "GTM Strategy",
-                "Customer Acquisition",
-                "Stakeholder Management",
-                "Business Development",
-                "Client Relations"
-            ],
-            "level": "Advanced",
-            "name": "Business & Sales"
+            "name": "Product Security"
         },
         {
             "keywords": [
                 "AWS",
                 "GCP",
                 "Kubernetes",
-                "Guard Duty",
-                "Macie",
-                "Trusted Advisor",
-                "Cognito"
+                "Terraform",
+                "IAM",
+                "GuardDuty"
             ],
             "level": "Advanced",
-            "name": "Cloud & k8s Security"
+            "name": "Cloud & Infra Security"
         },
         {
             "keywords": [
                 "OWASP Top 10",
-                "Recon automation",
-                "Android"
+                "Web/API Pentesting",
+                "Android Security",
+                "SAST/DAST"
             ],
-            "level": "Master",
-            "name": "App Pentesting"
+            "level": "Advanced",
+            "name": "Application Security"
         },
         {
             "keywords": [
-                "flask",
-                "django",
-                "requests"
+                "Vulnerability Management",
+                "CI/CD Security",
+                "Security Automation",
+                "DevSecOps"
             ],
-            "level": "Master",
-            "name": "Python"
-        },
-        {
-            "level": "Intermediate",
-            "name": "Golang"
+            "level": "Advanced",
+            "name": "Security Engineering"
         },
         {
             "keywords": [
-                "ctfs",
-                "malware",
-                "IDA",
-                "r2"
+                "Python",
+                "Golang",
+                "Bash"
             ],
-            "level": "Intermediate",
-            "name": "Researching"
+            "level": "Advanced",
+            "name": "Programming"
+        },
+        {
+            "keywords": [
+                "0-to-1 Product Building",
+                "Team Leadership",
+                "Customer Discovery"
+            ],
+            "level": "Advanced",
+            "name": "Founder Experience"
+        }
+    ],
+    "accelerators": [
+        {
+            "summary": "Entrepreneur in Residence at Antler, working on building ShipSec.ai.",
+            "website": "https://www.antler.co/",
+            "name": "Antler",
+            "location": "New York City Metropolitan Area",
+            "position": "Entrepreneur in Residence",
+            "startDate": "2025-10-01",
+            "endDate": "2025-11-30",
+            "highlights": [
+                "Selected for Antler's EIR program (3% acceptance rate); refined GTM strategy and business model through weekly pitch sessions.",
+                "Built relationships with VCs and technical advisors in NYC's startup ecosystem."
+            ]
+        },
+        {
+            "summary": "Selected for the DraperU Hero Accelerator Program. Staying at their university building in San Mateo and building ShipSec.ai.",
+            "website": "https://draperuniversity.com/",
+            "name": "Draper University",
+            "location": "San Mateo, California, United States",
+            "position": "Builder",
+            "startDate": "2025-05-01",
+            "endDate": "2025-06-30",
+            "highlights": [
+                "Selected for Tim Draper's Hero Accelerator; refined pitch through daily sessions with DraperU faculty and Silicon Valley investors.",
+                "Built MVP features and validated product assumptions through rapid prototyping with program cohort."
+            ]
         }
     ]
 }
