@@ -3,9 +3,9 @@
   <header>
     <h2 class='section-title'>Projects <span class="item-count">({{resume.projects.length}})</span></h2>
   </header>
-  <section id="projects">
+  <section id="projects" style="display: flex; flex-wrap: wrap; gap: 0.5em 1.5em;">
     {{#each resume.projects}}
-    <section class="project-item">
+    <section class="project-item" style="flex: 1 1 45%; min-width: 0;">
       {{#if summary}}
         <label for="project-item-{{@index}}"></label>
       {{/if}}

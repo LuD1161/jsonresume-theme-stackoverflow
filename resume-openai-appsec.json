@@ -4,14 +4,14 @@
     },
     "basics": {
         "name": "Aseem Shrey",
-        "label": "Infrastructure Security Engineer @ Scale AI | 7+ YoE in Security Engineering | Prev - Rippling, Yahoo, Blinkit & Gojek | Privacy Engg @ CMU",
+        "label": "Application Security Engineer | 7+ YoE in AppSec, Security Tooling & Secure SDLC | Scale AI, Rippling, Yahoo, GoJek, Blinkit | MS Privacy Engg @ CMU",
         "image": "https://avatars2.githubusercontent.com/u/17861054?s=460&u=3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&v=4",
         "location": {
             "city": "San Francisco",
             "region": "California",
             "countryCode": "US"
         },
-        "summary": "7+ years in cloud security, AppSec, and security automation at Scale AI, Rippling, Yahoo, GoJek, and Blinkit. Building contextual cloud security and AI-powered SOC triage at Scale AI. Built [AgentJail](https://agentjail.io) for AI agent guardrails. Founded [ShipSec.ai](https://github.com/ShipSecAI/studio), an AI security automation platform. Active CTF player and bug bounty hunter. Acknowledged by US DoD, Google, GM, IBM.",
+        "summary": "7+ years in application security, security tooling, and secure SDLC at Scale AI, Rippling, Yahoo, GoJek, and Blinkit. Built security tools from scratch: automated DAST, PR-scanning bots, vulnerability management systems. Performed threat modeling, code reviews, and penetration testing across web, API, and mobile. Built [AgentJail](https://agentjail.io) for AI agent sandboxing. Active CTF player and bug bounty hunter. Acknowledged by US DoD, Google, GM, IBM.",
         "profiles": [
             {
                 "username": "🌏 aseemshrey.in",
@@ -112,8 +112,8 @@
             "position": "Infrastructure Security Engineer",
             "startDate": "2026-06-01",
             "highlights": [
-                "Contextual security infrastructure protecting 100s of cloud accounts and trillions of assets.",
-                "Supporting automated AI-context triage SOC for security alert processing and response."
+                "Security infrastructure protecting 100s of cloud accounts and trillions of assets at an AI company.",
+                "Supporting AI-powered SOC triage for automated security alert processing and incident response."
             ]
         },
         {
@@ -124,8 +124,8 @@
             "startDate": "2025-05-01",
             "endDate": "2026-03-31",
             "highlights": [
-                "Built OSS no-code security automation platform from 0 to 1. Led team of 4. Pitched 50+ investors, secured Draper University and Antler EIR spots.",
-                "100+ customer interviews for PMF validation. Developed GTM strategy and community presence."
+                "Built AI-driven security automation platform for application security. Automated threat modeling and security assessments for product releases.",
+                "Led team of 4. Pitched 50+ investors, secured Draper University and Antler EIR spots."
             ]
         },
         {
@@ -135,7 +135,7 @@
             "position": "Founder & Security Consultant",
             "startDate": "2024-01-01",
             "highlights": [
-                "15+ clients across US, UK, Singapore, India. VAPT, cloud security audits, and security engineering.",
+                "15+ clients across US, UK, Singapore, India. VAPT, application security audits, and code reviews.",
                 "95%+ client satisfaction. Coordinated freelance engineers to scale delivery."
             ]
         },
@@ -147,7 +147,7 @@
             "startDate": "2023-08-01",
             "endDate": "2023-12-31",
             "highlights": [
-                "**SEA Team:** Automated critical migrations for on-prem security deployments."
+                "**SEA Team:** Automated critical security migrations and tooling for the Paranoids (Yahoo Security Collective)."
             ]
         },
         {
@@ -158,9 +158,9 @@
             "startDate": "2022-02-28",
             "endDate": "2023-09-29",
             "highlights": [
-                "**InfraSec:** Automated Vulnerability Management System (VMS) and security infrastructure processes.",
-                "**Assurance:** Built product security automation and automated DAST.",
-                "**ProdSec:** Threat modelling and code reviews for product releases."
+                "**ProdSec:** Threat modeling and security code reviews for product releases across the SDLC.",
+                "**Assurance:** Built automated DAST tooling and product security assessment frameworks.",
+                "**InfraSec:** Automated Vulnerability Management System (VMS). Tracked, triaged, and drove remediation."
             ]
         },
         {
@@ -171,15 +171,15 @@
             "startDate": "2021-02-01",
             "endDate": "2022-02-19",
             "highlights": [
-                "**[Compliance As Code](https://www.gojek.io/blog/compliance-as-code):** CIS Benchmark auto-remediation in GCP using Cloud Run.",
+                "**Pentesting:** Web API and Android penetration testing for feature releases. Found critical auth and business logic flaws.",
                 "**Red Teaming:** Escalated privileges to admin access across almost all GoJek infrastructure.",
-                "**Pentesting:** Web API and Android penetration testing for feature releases."
+                "**[Compliance As Code](https://www.gojek.io/blog/compliance-as-code):** CIS Benchmark auto-remediation in GCP using Cloud Run."
             ]
         },
         {
             "highlights": [
-                "**G-Shield Security Bot:** GitHub bot scanning PRs for secrets, code smells, vulnerable images, and sensitive mounts.",
-                "**DNS-As-Code:** Terraform pipeline for Cloudflare/Route53 DNS with failover switching.",
+                "**G-Shield Security Bot:** Built GitHub bot for secure SDLC. Scans PRs for secrets, code smells, vulnerable images, and sensitive mounts.",
+                "**Secure Coding Practices:** Drove shift-left security as 2nd member of the security team. Established security review processes from scratch.",
                 "**Temp DB Credentials:** Vault + GitHub integration for team-based temporary database credentials."
             ],
             "website": "http://www.grofers.com",
@@ -193,37 +193,39 @@
     "skills": [
         {
             "keywords": [
-                "AWS",
-                "GCP",
-                "Kubernetes",
-                "Terraform",
-                "IAM",
                 "Threat Modeling",
-                "Security Architecture"
+                "Code Reviews",
+                "Secure SDLC",
+                "SAST/DAST",
+                "Web/API Pentesting",
+                "Burp Suite"
             ],
             "level": "Advanced",
-            "name": "Cloud & Product Security"
+            "name": "Application Security"
         },
         {
             "keywords": [
-                "SAST/DAST",
-                "Web/API Pentesting",
                 "Vulnerability Management",
+                "Security Tooling",
                 "CI/CD Security",
-                "DevSecOps"
+                "DevSecOps",
+                "Incident Response"
             ],
             "level": "Advanced",
-            "name": "AppSec & Security Engineering"
+            "name": "Security Engineering"
         },
         {
             "keywords": [
                 "Python",
                 "Golang",
                 "Bash",
-                "Rust"
+                "Rust",
+                "AWS",
+                "GCP",
+                "Kubernetes"
             ],
             "level": "Advanced",
-            "name": "Programming"
+            "name": "Programming & Cloud"
         }
     ],
     "projects": [

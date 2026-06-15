@@ -562,6 +562,18 @@ section .location {
   width: 10em;
 }
 
+section#projects {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+section#projects > section.project-item {
+  flex: 1 1 45%;
+  min-width: 300px;
+  display: block;
+}
+
 #references .item {
   padding-left: 0.5em;
   margin-bottom: 1em;
@@ -784,6 +796,16 @@ section .location {
   .item.display {
     display: block;
     opacity: 1 !important;
+  }
+  section#projects {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.5em 1.5em;
+  }
+  section#projects > section.project-item {
+    flex: 1 1 45%;
+    min-width: 0;
+    display: block;
   }
   .fa-location-dot:before {
     padding-left: 0.1em;
